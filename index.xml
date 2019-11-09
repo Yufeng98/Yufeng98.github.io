@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yufeng Gu</title>
+    <link>http://Yufeng98.github.io/</link>
+    <description>Recent content on Yufeng Gu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Nov 2019 13:00:04 +0800</lastBuildDate>
+    
+	<atom:link href="http://Yufeng98.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://Yufeng98.github.io/contect/</link>
+      <pubDate>Sat, 09 Nov 2019 13:00:04 +0800</pubDate>
+      
+      <guid>http://Yufeng98.github.io/contect/</guid>
+      <description> Contect  Email: guyufeng.zju.edu.cn Cell Phone: (+86) 17698081290, (+86) 18958083878 Mail Address: 38 Zheda Rd, Yuquan Campus, Zhejiang University, Hangzhou, Zhejiang  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://Yufeng98.github.io/about/</link>
+      <pubDate>Sat, 09 Nov 2019 09:35:45 +0800</pubDate>
+      
+      <guid>http://Yufeng98.github.io/about/</guid>
+      <description>Bio My name is Yufeng GU. I&amp;rsquo;m a senior undergraduate student at Zhejiang University, P. R. China. I major in Information Engineering at College of Information Science and Electronic Engineering and minor in the Advanced Honor Class of Engineering Education (ACEE) in Chu Kochen Honors College.
+Currently, I&amp;rsquo;m doing my Bachelor&amp;rsquo;s thesis internship on machine learning and biomedical imaging at Yale Univeristy, supervised by Prof. James Duncan. In summer 2019, I did internship in PARSA at EPFL, working on computer architecture and machine learning, supervised by Prof.</description>
+    </item>
+    
+  </channel>
+</rss>
