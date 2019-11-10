@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>顾钰峰</title>
+    <link>https://guyufeng.cn/cn-br/</link>
+    <description>Recent content on 顾钰峰</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Nov 2019 08:37:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://guyufeng.cn/cn-br/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://guyufeng.cn/cn-br/about/</link>
+      <pubDate>Sun, 10 Nov 2019 08:37:58 +0800</pubDate>
+      
+      <guid>https://guyufeng.cn/cn-br/about/</guid>
+      <description> 简介 我就读于浙江大学信息与电子工程学院，主修信息工程专业，辅修竺可桢学院工程教育高级班.
+目前我正在美国耶鲁大学医学院进行本科生毕业论文项目实习，方向为基于机器学习的医学图像处理。2019年暑期，我加入瑞士洛桑联邦理工学院PARSA实验室进行计算机体系结构与机器学习相关的暑期实习。此前，我曾在浙大数芯实验室参与深度学习加速器项目。
+研究方向  计算机体系结构，深度学习加速器，硬件安全 医学图像处理，可解释性机器学习  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://guyufeng.cn/cn-br/contact/</link>
+      <pubDate>Sun, 10 Nov 2019 08:37:58 +0800</pubDate>
+      
+      <guid>https://guyufeng.cn/cn-br/contact/</guid>
+      <description> 联系方式  邮箱: guyufeng.zju.edu.cn 地址: 38 Zheda Rd, Yuquan Campus, Zhejiang University, Hangzhou, Zhejiang  </description>
+    </item>
+    
+  </channel>
+</rss>

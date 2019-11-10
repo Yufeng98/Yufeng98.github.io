@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://guyufeng.cn/cn-br/about/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/cn-br/contact/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/cn-br/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/cn-br/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/cn-br/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/tags/"
+                />
+  </url>
+  
+</urlset>
