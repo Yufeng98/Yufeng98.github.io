@@ -18,11 +18,6 @@
   </url>
   
   <url>
-    <loc>https://guyufeng.cn/posts/git_merge/</loc>
-    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://guyufeng.cn/posts/hugo/</loc>
     <lastmod>2019-11-10T08:37:58+08:00</lastmod>
   </url>
@@ -75,6 +70,16 @@
                 hreflang="en"
                 href="https://guyufeng.cn/about/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/git_merge/</loc>
+    <lastmod>2019-07-15T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/singapore/</loc>
+    <lastmod>2018-03-04T08:37:58+08:00</lastmod>
   </url>
   
   <url>
