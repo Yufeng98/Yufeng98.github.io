@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://guyufeng.cn/miscellaneous/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/git_merge/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/hugo/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/</loc>
+    <lastmod>2019-11-10T08:37:58+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/"
+                />
+  </url>
+  
+  <url>
     <loc>https://guyufeng.cn/contact/</loc>
     <lastmod>2019-11-09T13:00:04+08:00</lastmod>
     <xhtml:link
@@ -14,21 +49,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://guyufeng.cn/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://guyufeng.cn/</loc>
-    <lastmod>2019-11-09T13:00:04+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn-br"
-                href="https://guyufeng.cn/cn-br/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://guyufeng.cn/"
                 />
   </url>
   

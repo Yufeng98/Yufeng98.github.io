@@ -22,7 +22,7 @@ hugo new site mypage
 ```shell
 cd mypage
 git init
-git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 ```
 
 ### Try template
