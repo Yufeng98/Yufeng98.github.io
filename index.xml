@@ -61,20 +61,11 @@ cp -r ./themes/hugo-coder/exampleSite/* ./ Deploy page on local server hugo serv
     
     <item>
       <title></title>
-      <link>https://guyufeng.cn/contact/</link>
-      <pubDate>Sat, 09 Nov 2019 13:00:04 +0800</pubDate>
-      
-      <guid>https://guyufeng.cn/contact/</guid>
-      <description> Contect  Email: guyufeng.zju.edu.cn Mail Address: 38 Zheda Rd, Yuquan Campus, Zhejiang University, Hangzhou, Zhejiang  </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://guyufeng.cn/about/</link>
       <pubDate>Sat, 09 Nov 2019 09:35:45 +0800</pubDate>
       
       <guid>https://guyufeng.cn/about/</guid>
-      <description>Bio My name is Yufeng GU. I&amp;rsquo;m a senior undergraduate student at Zhejiang University, P. R. China. I major in Information Engineering at College of Information Science and Electronic Engineering and minor in the Advanced Honor Class of Engineering Education (ACEE) in Chu Kochen Honors College.
+      <description>Bio My name is Yufeng Gu. I&amp;rsquo;m a senior undergraduate student at Zhejiang University, P. R. China. I major in Information Engineering at College of Information Science and Electronic Engineering and minor in the Advanced Honor Class of Engineering Education (ACEE) in Chu Kochen Honors College.
 Currently, I&amp;rsquo;m doing my Bachelor&amp;rsquo;s thesis internship on machine learning and biomedical imaging at Yale Univeristy, supervised by Prof. James Duncan. In summer 2019, I did internship in PARSA at EPFL, working on computer architecture and machine learning, supervised by Prof.</description>
     </item>
     
@@ -137,6 +128,17 @@ git push -f</description>
  旅游景点 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;新加坡樟宜机场曾被评为世界上最漂亮的机场，其本身就是一件精美的艺术品，每一处商铺、柜台、地毯、沙发都体现着无与伦比的精致。音乐的搭配轻松悦耳，减轻旅客舟车劳顿的辛苦。 小印度的环境较新加坡其他地方要差一些，和牛车水（China Town）差不多。印度文化馆环境很好，值得$4的门票，主要介绍了印度人在新加坡定居的变迁史，沉淀着印度的近现代文化。不过印度餐饮实在是不敢恭维。 乌节路是一条奢侈品商店云集的购物节，商品大多看不懂也买不起。 圣安德烈教堂是一座基督教堂，名气似乎很大，但大家都不是很了解。 滨海湾花园拥有来自全世界的奇花异草，非常漂亮。 克拉码头有很多酒吧，不少歌手在酒吧驻唱，通常的配置是一个歌手，一个吉他手和一个鼓手。 圣淘沙是一座岛，和海口、三亚的海滨景点相似，但景点更多，有点像亚龙湾、银泰城和迪士尼的组合。
  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;夜间动物园英文名称叫 Night Safari，曾经在英语课本上出现过。其中伺养有各种新奇的动物。对我们来讲很新鲜，因为热带的动物在中国并不常见。 新加坡海洋馆是我有记忆以来参观的第一个海洋馆，其中种类繁多的珍奇海洋动物着实让我大开眼界。从水族馆底部的独特观赏角度也大大提升的游客的观赏体验 国家美术馆也是我认真参观的第一个美术馆，可能是门票太贵的缘故，高雅的艺术品领游客看得眼花缭乱。 在小印度，我看到一群小学生在参观印度文化馆，老师为他们介绍印度风俗与文化。我不知道他们到底能否理解那些深奥的内容，但这种教学方式可谓是真正的素质教育。后来在参观海洋馆和国家美术馆的时候，我在想如果早一些看到这些景象，我会不会对海洋科学或者绘画艺术感兴趣，又或者我会更认真地听《中国绘画史》这门课程。所谓“行千里路，读万卷书”大概就是这个道理，就像只有亲临都江堰才能更好地理解其中巧妙的工程原理。
  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://guyufeng.cn/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://guyufeng.cn/publications/</guid>
+      <description> Publications  Boosting Multi-site fMRI Analysis Using Privacy-preserving Federated Learning Xiaoxiao Li, Yufeng Gu, Nicha Dvornek, James S. Duncan Abstract to appear in Organization for Human Brain Mapping Annual Meeting (OHBM), 2020.
+ Multi-site fMRI Analysis Using Privacy-preserving Federated Learning and Domain Adaptation: ABIDE Results [paper] Xiaoxiao Li, Yufeng Gu, Nicha Dvornek, Lawrence Staib, Pamela Ventola, James S. Duncan Submitted to Medical Image Analysis.
+  </description>
     </item>
     
   </channel>
