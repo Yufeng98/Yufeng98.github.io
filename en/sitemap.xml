@@ -3,18 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://guyufeng.cn/posts/connecticut/</loc>
-    <lastmod>2019-12-12T08:37:58+08:00</lastmod>
+    <loc>https://guyufeng.cn/posts/vim_tutorial/</loc>
+    <lastmod>2020-06-03T08:37:58+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://guyufeng.cn/posts/</loc>
-    <lastmod>2019-12-12T08:37:58+08:00</lastmod>
+    <lastmod>2020-06-03T08:37:58+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://guyufeng.cn/</loc>
-    <lastmod>2019-12-12T08:37:58+08:00</lastmod>
+    <lastmod>2020-06-03T08:37:58+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn-br"
@@ -25,6 +25,11 @@
                 hreflang="en"
                 href="https://guyufeng.cn/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/connecticut/</loc>
+    <lastmod>2019-12-12T08:37:58+08:00</lastmod>
   </url>
   
   <url>

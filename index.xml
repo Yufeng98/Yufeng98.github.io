@@ -6,10 +6,19 @@
     <description>Recent content on Yufeng Gu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2019 08:37:58 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 08:37:58 +0800</lastBuildDate>
     
 	<atom:link href="https://guyufeng.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://guyufeng.cn/posts/vim_tutorial/</link>
+      <pubDate>Wed, 03 Jun 2020 08:37:58 +0800</pubDate>
+      
+      <guid>https://guyufeng.cn/posts/vim_tutorial/</guid>
+      <description>Vim Tutorial Normal Mode - Navigate the structure of the file Move Cursor  h/j/k/l - Move left/up/down/right H/M/L - Move to the top/middle/bottom of the window w/e - Move to the beginning/end of the next word b - Move to the beggining of the previous word 0/$ - Move to the beginning/end of a line (/) - Move to the beggining of the next/previous line {/} - Move to the beginning of the next/previous paragraph ^E/^Y - Scroll the window down/up ^F/^B - Scroll down/up one page gg/G - Go to top/bottom of the file  Copy/Paste/Delete  y - Copy p - Paste yy/yw/y$ - Copy a line/word/from the cursor to the end of the file #yy - Copy # lines x - Delete a single character d/dd/dw - Delete highlight text/a line/a word D/d0 - Delete from the cursor to the beginning/end of the line dgg/dG - Delete from the cursor to the beginning/end of the file  Actions  u/u# - Undo the last/last # actions .</description>
+    </item>
     
     <item>
       <title></title>
@@ -44,6 +53,7 @@
       <guid>https://guyufeng.cn/miscellaneous/</guid>
       <description> Miscellaneous 【July 2019】Tutorial on merging redundant commits
 【Nov. 2019】Tutorial on Hugo drived page
+【June 2020】Tutorial on Vim
 -- </description>
     </item>
     
