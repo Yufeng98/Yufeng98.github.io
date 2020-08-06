@@ -12,29 +12,25 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Bothered by redundant commits? git log git rebase -i ${commit ID} Replace pick with squash
-Specify name of commite
-git push -f "/>
+<meta name="twitter:description" content="Tmux Tutorial Commands Session Management tmux [new -s &lt;session-name&gt; -m &lt;window-name&gt;] tmux detach tmux a[ttach] -t &lt;session-name&gt; tmux switch -t tmux ls tmux kill-session -t &lt;session-name&gt; tmux kill-server # kill all sessions Prefix Commands Ctrl&#43;b Session :new&lt;Enter&gt; create a new session s list all sessions $ rename current session d detach current session Window c create a new window w list all windows , rename current window &amp; close current window Pane % splite the pane vertically &#34; splite the pane horizontally x close current pane Configuration git clone https://github."/>
 
     <meta property="og:title" content="" />
-<meta property="og:description" content="Bothered by redundant commits? git log git rebase -i ${commit ID} Replace pick with squash
-Specify name of commite
-git push -f " />
+<meta property="og:description" content="Tmux Tutorial Commands Session Management tmux [new -s &lt;session-name&gt; -m &lt;window-name&gt;] tmux detach tmux a[ttach] -t &lt;session-name&gt; tmux switch -t tmux ls tmux kill-session -t &lt;session-name&gt; tmux kill-server # kill all sessions Prefix Commands Ctrl&#43;b Session :new&lt;Enter&gt; create a new session s list all sessions $ rename current session d detach current session Window c create a new window w list all windows , rename current window &amp; close current window Pane % splite the pane vertically &#34; splite the pane horizontally x close current pane Configuration git clone https://github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://guyufeng.cn/posts/git_merge/" />
-<meta property="article:published_time" content="2019-07-15T08:37:58+08:00" />
-<meta property="article:modified_time" content="2019-07-15T08:37:58+08:00" />
+<meta property="og:url" content="https://guyufeng.cn/posts/tmux_tutorial/" />
+<meta property="article:published_time" content="2020-08-03T08:37:58+08:00" />
+<meta property="article:modified_time" content="2020-08-03T08:37:58+08:00" />
 
 
     
-      <base href="https://guyufeng.cn/posts/git_merge/">
+      <base href="https://guyufeng.cn/posts/tmux_tutorial/">
     
     <title>
    · Yufeng Gu
 </title>
 
     
-      <link rel="canonical" href="https://guyufeng.cn/posts/git_merge/">
+      <link rel="canonical" href="https://guyufeng.cn/posts/tmux_tutorial/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -130,8 +126,8 @@ git push -f " />
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2019-07-15T08:37:58&#43;08:00'>
-                July 15, 2019
+              <time datetime='2020-08-03T08:37:58&#43;08:00'>
+                August 3, 2020
               </time>
             </span>
             <span class="reading-time">
@@ -145,12 +141,35 @@ git push -f " />
       </header>
 
       <div>
-        <h2 id="bothered-by-redundant-commits">Bothered by redundant commits?</h2>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git log
-git rebase -i <span style="color:#0ff;font-weight:bold">${</span>commit ID<span style="color:#0ff;font-weight:bold">}</span>
-</code></pre></div><p>Replace <code>pick</code> with <code>squash</code></p>
-<p>Specify name of commite</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -f
+        <h1 id="tmux-tutorial">Tmux Tutorial</h1>
+<h3 id="commands">Commands</h3>
+<h4 id="session-management">Session Management</h4>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">tmux [new -s &lt;session-name&gt; -m &lt;window-name&gt;]
+tmux detach
+tmux a[ttach] -t &lt;session-name&gt;
+tmux switch -t 
+tmux ls
+tmux kill-session -t &lt;session-name&gt;
+tmux kill-server <span style="color:#007f7f"># kill all sessions</span>
+</code></pre></div><h4 id="prefix-commands-ctrlb">Prefix Commands Ctrl+b</h4>
+<h4 id="session">Session</h4>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">:new&lt;Enter&gt;     create a new session
+s               list all sessions
+$               rename current session
+d               detach current session
+</code></pre></div><h4 id="window">Window</h4>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">c               create a new window
+w               list all windows
+,               rename current window
+&amp;               close current window
+</code></pre></div><h4 id="pane">Pane</h4>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">%               splite the pane vertically
+<span style="color:#0ff;font-weight:bold">&#34;               splite the pane horizontally
+</span><span style="color:#0ff;font-weight:bold">x               close current pane
+</span></code></pre></div><h3 id="configuration">Configuration</h3>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/Yufeng98/.tmux.git
+cp .tmux/.tmux.conf .
+cp .tmux/.tmux.conf.local .
 </code></pre></div>
       </div>
 
