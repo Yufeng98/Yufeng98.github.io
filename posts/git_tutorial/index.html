@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Yufeng Gu">
+    <meta name="description" content="Yufeng&#39;s personal website">
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Git Tutorial Create and make an initial push mkdir machine_1 cd machine_1 git init # initialize git in current directory git status # show changes of the Working Directory # Create hello.py git add . # update changes in the Staging Index git commit -m &#34;Hello World!&#34; # update changes in the Commit Tree git remote add origin https://github.com/Yufeng98/git_tutorial.git git push origin master See details in git_tutorial repositary[https://github.com/Yufeng98/git_tutorial].
+Version control via branch git checkout -b cat # create and move to a new branch named cat # Add functionality cat to hello."/>
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="Git Tutorial Create and make an initial push mkdir machine_1 cd machine_1 git init # initialize git in current directory git status # show changes of the Working Directory # Create hello.py git add . # update changes in the Staging Index git commit -m &#34;Hello World!&#34; # update changes in the Commit Tree git remote add origin https://github.com/Yufeng98/git_tutorial.git git push origin master See details in git_tutorial repositary[https://github.com/Yufeng98/git_tutorial].
+Version control via branch git checkout -b cat # create and move to a new branch named cat # Add functionality cat to hello." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guyufeng.cn/posts/git_tutorial/" />
+<meta property="article:published_time" content="2020-08-17T08:37:58+08:00" />
+<meta property="article:modified_time" content="2020-08-17T08:37:58+08:00" />
+
+
+    
+      <base href="https://guyufeng.cn/posts/git_tutorial/">
+    
+    <title>
+   · Yufeng Gu
+</title>
+
+    
+      <link rel="canonical" href="https://guyufeng.cn/posts/git_tutorial/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://guyufeng.cn/css/coder.min.f0c53811d445e229bab130d529d8eef20c3ac35cb138bdb259a55c6ddd8def96.css" integrity="sha256-8MU4EdRF4im6sTDVKdju8gw6w1yxOL2yWaVcbd2N75Y=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://guyufeng.cn/images/yg-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://guyufeng.cn/images/yg-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.74.3" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://guyufeng.cn/">
+      Yufeng Gu
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guyufeng.cn">Home</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guyufeng.cn/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guyufeng.cn/publications/">Publications</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guyufeng.cn/files/Yufeng_Gu_CV.pdf">CV</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guyufeng.cn/miscellaneous/">Misc</a>
+          </li>
+        
+      
+      
+        
+        
+        
+          
+        
+          
+            
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              
+            
+            <li class="navigation-item">
+              <a href="https://guyufeng.cn/cn-br/">Chinese</a>
+            </li>
+          
+        
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title"></h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-08-17T08:37:58&#43;08:00'>
+                August 17, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              4 minutes read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        <h1 id="git-tutorial">Git Tutorial</h1>
+<h3 id="create-and-make-an-initial-push">Create and make an initial push</h3>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir machine_1
+<span style="color:#fff;font-weight:bold">cd</span> machine_1
+git init            <span style="color:#007f7f"># initialize git in current directory</span>
+git status          <span style="color:#007f7f"># show changes of the Working Directory</span>
+<span style="color:#007f7f"># Create hello.py</span>
+git add .           <span style="color:#007f7f"># update changes in the Staging Index</span>
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Hello World!&#34;</span>    <span style="color:#007f7f"># update changes in the Commit Tree</span>
+git remote add origin https://github.com/Yufeng98/git_tutorial.git
+git push origin master
+</code></pre></div><p>See details in git_tutorial repositary[https://github.com/Yufeng98/git_tutorial].</p>
+<h3 id="version-control-via-branch">Version control via branch</h3>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b cat     <span style="color:#007f7f"># create and move to a new branch named cat</span>
+<span style="color:#007f7f"># Add functionality cat to hello.py</span>
+git add .               
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Cat&#34;</span>
+git checkout master     <span style="color:#007f7f"># move to master branch</span>
+git checkout -b dog
+<span style="color:#007f7f"># Add functionality dog to hello.py</span>
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;dog&#34;</span>
+git commit --amend -m <span style="color:#0ff;font-weight:bold">&#34;Dog&#34;</span>
+git checkout master
+git log --oneline --all --graph     <span style="color:#007f7f"># show current git log as graph</span>
+* 7d77519 (dog) Dog
+| * 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 (HEAD -&gt; master, origin/master) Hello World
+</code></pre></div><h3 id="merge-two-branches">Merge two branches</h3>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b animal
+git merge cat
+<span style="color:#007f7f"># animal branch is created based on master, cat branch is also based on master, so cat can be merged to animal without conflictions.</span>
+git merge dog       <span style="color:#007f7f"># fail because of confliction</span>
+vim hello.py        <span style="color:#007f7f"># deal with confliction</span>
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+def cat():
+    print(<span style="color:#0ff;font-weight:bold">&#34;Cat!&#34;</span>)
+
+<span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+    cat()
+=======
+def dog();
+    print(<span style="color:#0ff;font-weight:bold">&#34;Dog!&#34;</span>)
+
+<span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+    dog()
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; dog
+
+<span style="color:#007f7f"># delete &lt;&lt;&lt; === &gt;&gt;&gt; and commit changes</span>
+git add .
+git commit
+git log --oneline --all --graph
+*   e79f0bd (HEAD -&gt; animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 (origin/master, master) Hello World
+
+git checkout master
+git merge animals
+git log --oneline --all --graph
+*   e79f0bd (HEAD -&gt; master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 (origin/master) Hello World
+
+git push
+git log --oneline --all --graph
+*   e79f0bd (HEAD -&gt; master, origin/master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 Hello World
+</code></pre></div><h3 id="collaboration">Collaboration</h3>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/Yufeng98/git_tutorial machine_2
+<span style="color:#fff;font-weight:bold">cd</span> machine_2
+<span style="color:#007f7f"># Add functionality fish to hello.py</span>
+git add .
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Fish&#34;</span>
+<span style="color:#007f7f"># Add functionality duck to hello.py</span>
+git add .
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Duck&#34;</span>
+git reset --hard <span style="color:#0ff;font-weight:bold">${</span>hash of fish<span style="color:#0ff;font-weight:bold">}</span>
+git log --oneline --all --graph
+* b9d2299 (master) Duck
+* 62a9ec4 (HEAD) Fish
+*   e79f0bd (origin/master, origin/HEAD) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 Dog
+* | 4a3d17c Cat
+|/  
+* 7ff98a6 Hello World
+
+git push origin HEAD:master
+<span style="color:#fff;font-weight:bold">cd</span> ../machine_1
+git fetch
+git log --oneline --all --graph
+* 62a9ec4 (origin/master) Fish
+*   e79f0bd (HEAD -&gt; master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 Hello World
+git merge origin/master     <span style="color:#007f7f"># git pull is similar to git fetch and merge</span>
+
+<span style="color:#007f7f"># add functionality tiger to hello.py and update it to remote repository</span>
+<span style="color:#fff;font-weight:bold">cd</span> ../machine_2
+git fetch
+git log --oneline --all --graph
+* f96f96d (origin/master, origin/HEAD) Tiger
+| * b9d2299 (master) Duck
+|/  
+* 62a9ec4 (HEAD) Fish
+*   e79f0bd Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 Dog
+* | 4a3d17c Cat
+|/  
+* 7ff98a6 Hello World
+
+git checkout master
+vim hello.py
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+def duck():
+    print(<span style="color:#0ff;font-weight:bold">&#34;Duck!&#34;</span>)
+=======
+def tiger():
+    print(<span style="color:#0ff;font-weight:bold">&#34;Tiger!&#34;</span>)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; f96f96dba513b1c0b6e44a7191d0ff1f3fdf33e8
+
+<span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+    hello()
+    cat()
+    dog()
+    fish()
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    duck()
+=======
+    tiger()
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; f96f96dba513b1c0b6e44a7191d0ff1f3fdf33e8
+
+<span style="color:#007f7f"># delete &lt;&lt;&lt; === &gt;&gt;&gt; and commit changes</span>
+git add .
+git commit
+git log --oneline --all --graph
+*   de3b050 (HEAD -&gt; master) Merge branch <span style="color:#0ff;font-weight:bold">&#39;master&#39;</span> of https://github.com/Yufeng98/git_tutorial into master
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * f96f96d (origin/master, origin/HEAD) Tiger
+* | b9d2299 Duck
+|/  
+* 62a9ec4 Fish
+*   e79f0bd Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 Dog
+* | 4a3d17c Cat
+|/  
+* 7ff98a6 Hello World
+
+git push
+<span style="color:#fff;font-weight:bold">cd</span> ../machine_1
+git fetch
+git merge origin/master
+git log --oneline --all --graph
+*   de3b050 (HEAD -&gt; master, origin/master) Merge branch <span style="color:#0ff;font-weight:bold">&#39;master&#39;</span> of https://github.com/Yufeng98/git_tutorial into master
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * f96f96d Tiger
+* | b9d2299 Duck
+|/  
+* 62a9ec4 Fish
+*   e79f0bd (animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 Hello World
+</code></pre></div><h3 id="bothered-by-redundant-commits">Bothered by redundant commits?</h3>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git log
+git rebase -i <span style="color:#0ff;font-weight:bold">${</span>commit ID<span style="color:#0ff;font-weight:bold">}</span>
+</code></pre></div><p>Replace <code>pick</code> with <code>squash</code></p>
+<p>Specify name of commite</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -f
+</code></pre></div>
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Undergraduate @ Zhejiang University</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
