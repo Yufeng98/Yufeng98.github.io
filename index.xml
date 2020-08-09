@@ -6,10 +6,20 @@
     <description>Recent content on Yufeng Gu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Aug 2020 08:37:58 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 08:37:58 +0800</lastBuildDate>
     
 	<atom:link href="https://guyufeng.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://guyufeng.cn/posts/git_tutorial/</link>
+      <pubDate>Mon, 17 Aug 2020 08:37:58 +0800</pubDate>
+      
+      <guid>https://guyufeng.cn/posts/git_tutorial/</guid>
+      <description>Git Tutorial Create and make an initial push mkdir machine_1 cd machine_1 git init # initialize git in current directory git status # show changes of the Working Directory # Create hello.py git add . # update changes in the Staging Index git commit -m &amp;#34;Hello World!&amp;#34; # update changes in the Commit Tree git remote add origin https://github.com/Yufeng98/git_tutorial.git git push origin master See details in git_tutorial repositary[https://github.com/Yufeng98/git_tutorial].
+Version control via branch git checkout -b cat # create and move to a new branch named cat # Add functionality cat to hello.</description>
+    </item>
     
     <item>
       <title></title>
@@ -17,7 +27,7 @@
       <pubDate>Mon, 03 Aug 2020 08:37:58 +0800</pubDate>
       
       <guid>https://guyufeng.cn/posts/tmux_tutorial/</guid>
-      <description>Tmux Tutorial Commands Session Management tmux [new -s &amp;lt;session-name&amp;gt; -m &amp;lt;window-name&amp;gt;] tmux detach tmux a[ttach] -t &amp;lt;session-name&amp;gt; tmux switch -t tmux ls tmux kill-session -t &amp;lt;session-name&amp;gt; tmux kill-server # kill all sessions Prefix Commands Ctrl+b Session :new&amp;lt;Enter&amp;gt; create a new session s list all sessions $ rename current session d detach current session Window c create a new window w list all windows , rename current window &amp;amp; close current window Pane % splite the pane vertically &amp;#34; splite the pane horizontally x close current pane Configuration git clone https://github.</description>
+      <description>Tmux Tutorial Commands Session Management tmux [new -s &amp;lt;session-name&amp;gt; -m &amp;lt;window-name&amp;gt;] tmux detach tmux a[ttach] -t &amp;lt;session-name&amp;gt; tmux switch -t tmux ls tmux kill-session -t &amp;lt;session-name&amp;gt; tmux kill-server # kill all sessions Prefix Commands Ctrl+b Session  :new&amp;lt;Enter&amp;gt; create a new session s list all sessions $ rename current session d detach current session  Window  c create a new window w list all windows , rename current window &amp;amp; close current window  Pane  % splite the pane vertically &amp;quot; splite the pane horizontally x close current pane  Configuration git clone https://github.</description>
     </item>
     
     <item>
@@ -59,10 +69,10 @@
       <pubDate>Sun, 10 Nov 2019 08:37:58 +0800</pubDate>
       
       <guid>https://guyufeng.cn/miscellaneous/</guid>
-      <description>Miscellaneous 【July 2019】Tutorial on merging redundant commits
-【Nov. 2019】Tutorial on Hugo drived page
+      <description>Miscellaneous 【Nov. 2019】Tutorial on Hugo drived page
 【June 2020】Tutorial on Vim
-【Aug 2020】Tutorial on Tmux</description>
+【Aug 2020】Tutorial on Tmux
+【Aug 2020】Tutorial on Git</description>
     </item>
     
     <item>
@@ -85,17 +95,6 @@ cp -r ./themes/hugo-coder/exampleSite/* ./ Deploy page on local server hugo serv
       <guid>https://guyufeng.cn/about/</guid>
       <description>Bio My name is Yufeng Gu. I&amp;rsquo;m a senior undergraduate student at Zhejiang University, P. R. China. I major in Information Engineering at College of Information Science and Electronic Engineering and minor in the Advanced Honor Class of Engineering Education (ACEE) in Chu Kochen Honors College.
 Currently, I&amp;rsquo;m doing my Bachelor&amp;rsquo;s thesis internship on machine learning and biomedical imaging at Yale Univeristy, supervised by Prof. James Duncan. In summer 2019, I did internship in PARSA at EPFL, working on computer architecture and machine learning, supervised by Prof.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://guyufeng.cn/posts/git_merge/</link>
-      <pubDate>Mon, 15 Jul 2019 08:37:58 +0800</pubDate>
-      
-      <guid>https://guyufeng.cn/posts/git_merge/</guid>
-      <description>Bothered by redundant commits? git log git rebase -i ${commit ID} Replace pick with squash
-Specify name of commite
-git push -f </description>
     </item>
     
     <item>
