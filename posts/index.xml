@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Yufeng Gu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Aug 2020 08:37:58 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 08:37:58 +0800</lastBuildDate>
     
 	<atom:link href="https://guyufeng.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://guyufeng.cn/posts/git_tutorial/</link>
+      <pubDate>Mon, 17 Aug 2020 08:37:58 +0800</pubDate>
+      
+      <guid>https://guyufeng.cn/posts/git_tutorial/</guid>
+      <description>Git Tutorial Create and make an initial push mkdir machine_1 cd machine_1 git init # initialize git in current directory git status # show changes of the Working Directory # Create hello.py git add . # update changes in the Staging Index git commit -m &amp;#34;Hello World!&amp;#34; # update changes in the Commit Tree git remote add origin https://github.com/Yufeng98/git_tutorial.git git push origin master See details in git_tutorial repositary[https://github.com/Yufeng98/git_tutorial].
+Version control via branch git checkout -b cat # create and move to a new branch named cat # Add functionality cat to hello.</description>
+    </item>
     
     <item>
       <title></title>
@@ -17,7 +27,7 @@
       <pubDate>Mon, 03 Aug 2020 08:37:58 +0800</pubDate>
       
       <guid>https://guyufeng.cn/posts/tmux_tutorial/</guid>
-      <description>Tmux Tutorial Commands Session Management tmux [new -s &amp;lt;session-name&amp;gt; -m &amp;lt;window-name&amp;gt;] tmux detach tmux a[ttach] -t &amp;lt;session-name&amp;gt; tmux switch -t tmux ls tmux kill-session -t &amp;lt;session-name&amp;gt; tmux kill-server # kill all sessions Prefix Commands Ctrl+b Session :new&amp;lt;Enter&amp;gt; create a new session s list all sessions $ rename current session d detach current session Window c create a new window w list all windows , rename current window &amp;amp; close current window Pane % splite the pane vertically &amp;#34; splite the pane horizontally x close current pane Configuration git clone https://github.</description>
+      <description>Tmux Tutorial Commands Session Management tmux [new -s &amp;lt;session-name&amp;gt; -m &amp;lt;window-name&amp;gt;] tmux detach tmux a[ttach] -t &amp;lt;session-name&amp;gt; tmux switch -t tmux ls tmux kill-session -t &amp;lt;session-name&amp;gt; tmux kill-server # kill all sessions Prefix Commands Ctrl+b Session  :new&amp;lt;Enter&amp;gt; create a new session s list all sessions $ rename current session d detach current session  Window  c create a new window w list all windows , rename current window &amp;amp; close current window  Pane  % splite the pane vertically &amp;quot; splite the pane horizontally x close current pane  Configuration git clone https://github.</description>
     </item>
     
     <item>
@@ -63,17 +73,6 @@
 Download Hugo Follow instructions on Hugo.
 Verify Hugo hugo version Create a new site hugo new site mypage Download a theme cd mypage git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke Try template We can find an example in exampleSite, where static stores images and content stores markdown files.
 cp -r ./themes/hugo-coder/exampleSite/* ./ Deploy page on local server hugo server -D See it with localhost:1313 on your browser.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://guyufeng.cn/posts/git_merge/</link>
-      <pubDate>Mon, 15 Jul 2019 08:37:58 +0800</pubDate>
-      
-      <guid>https://guyufeng.cn/posts/git_merge/</guid>
-      <description>Bothered by redundant commits? git log git rebase -i ${commit ID} Replace pick with squash
-Specify name of commite
-git push -f </description>
     </item>
     
     <item>
