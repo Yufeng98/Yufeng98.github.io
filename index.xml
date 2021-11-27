@@ -92,8 +92,7 @@ cp -r ./themes/hugo-coder/exampleSite/* ./ Deploy page on local server hugo serv
       <pubDate>Sat, 09 Nov 2019 09:35:45 +0800</pubDate>
       
       <guid>https://guyufeng.cn/about/</guid>
-      <description>Bio My name is Yufeng Gu. I&amp;rsquo;m a senior undergraduate student at Zhejiang University, P. R. China. I major in Information Engineering at College of Information Science and Electronic Engineering and minor in the Advanced Honor Class of Engineering Education (ACEE) in Chu Kochen Honors College.
-Currently, I&amp;rsquo;m doing my Bachelor&amp;rsquo;s thesis internship on machine learning and biomedical imaging at Yale Univeristy, supervised by Prof. James Duncan. In summer 2019, I did internship in PARSA at EPFL, working on computer architecture and machine learning, supervised by Prof.</description>
+      <description>Bio My name is Yufeng Gu. I am a PhD student in Computer Engineering at University of Michigan, advised by Reetuparna Das. Previously, I obtained my Bachelor degree in Information Engineering from Zhejiang University, P. R. China in 2020. I did my Bachelor thesis project at Yale University, working with Xiaoxiao Li and James Duncan. In summer 2019, I worked as an undergraduate student intern in PARSA at EPFL, advised by Babak Falsafi.</description>
     </item>
     
     <item>
@@ -149,9 +148,8 @@ Currently, I&amp;rsquo;m doing my Bachelor&amp;rsquo;s thesis internship on mach
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://guyufeng.cn/publications/</guid>
-      <description>Publications   Boosting Multi-site fMRI Analysis Using Privacy-preserving Federated Learning Xiaoxiao Li, Yufeng Gu, Nicha Dvornek, James S. Duncan Abstract to appear in Organization for Human Brain Mapping Annual Meeting (OHBM), 2020.
-  Multi-site fMRI Analysis Using Privacy-preserving Federated Learning and Domain Adaptation: ABIDE Results [paper] Xiaoxiao Li, Yufeng Gu, Nicha Dvornek, Lawrence Staib, Pamela Ventola, James S. Duncan Submitted to Medical Image Analysis.
-  </description>
+      <description>Publications   GenomicsBench: A Benchmark Suite for Genomics [paper] [tutorial] Arun Subramaniyan, Yufeng Gu, Timothy Dunn, Somnath Paul, Md Vasimuddin, Sanchit Misra, David Blaauw, Satish Narayanasamy, and Reetuparna Das International Symposium on Performance Analysis of Systems and Software (ISPASS), IEEE, 2021.
+  Multi-site fMRI Analysis Using Privacy-preserving Federated Learning and Domain Adaptation: ABIDE Results [paper] [arxiv] [code] Xiaoxiao Li, Yufeng Gu, Nicha Dvornek, Lawrence Staib, Pamela Ventola, James S.</description>
     </item>
     
   </channel>
