@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>顾钰峰</title>
@@ -6,7 +6,6 @@
     <description>Recent content on 顾钰峰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Nov 2019 08:37:58 +0800</lastBuildDate>
     
 	<atom:link href="https://guyufeng.cn/cn-br/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +16,7 @@
       <pubDate>Sun, 10 Nov 2019 08:37:58 +0800</pubDate>
       
       <guid>https://guyufeng.cn/cn-br/about/</guid>
-      <description> 简介 我就读于密歇根大学安娜堡分校计算机科学与工程系，攻读博士学位。2020年于浙江大学信息与电子工程学院获得工学学士学位。目前研究方向为计算机体系结构，领域专用加速器和可重构架构。
+      <description>简介 我就读于密歇根大学安娜堡分校计算机科学与工程系，攻读博士学位。2020年于浙江大学信息与电子工程学院获得工学学士学位。目前研究方向为计算机体系结构，领域专用加速器和可重构架构。
 联系方式  邮箱: yufenggu [AT] umich [DOT] edu 地址: 4844 Bob and Betty Beyster Building, 2260 Hayward, Ann Arbor, MI, USA, 48109-2121  </description>
     </item>
     

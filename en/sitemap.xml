@@ -1,10 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://guyufeng.cn/posts/git_tutorial/</loc>
     <lastmod>2020-08-17T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/posts/</loc>
+    <lastmod>2020-08-17T08:37:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guyufeng.cn/</loc>
+    <lastmod>2020-08-17T08:37:58+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn-br"
+                href="https://guyufeng.cn/cn-br/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://guyufeng.cn/"
+                />
   </url>
   
   <url>
@@ -78,7 +98,6 @@
   
   <url>
     <loc>https://guyufeng.cn/categories/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn-br"
@@ -92,14 +111,7 @@
   </url>
   
   <url>
-    <loc>https://guyufeng.cn/posts/</loc>
-    <lastmod>2020-08-17T08:37:58+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://guyufeng.cn/tags/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn-br"
@@ -109,22 +121,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://guyufeng.cn/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://guyufeng.cn/</loc>
-    <lastmod>2020-08-17T08:37:58+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn-br"
-                href="https://guyufeng.cn/cn-br/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://guyufeng.cn/"
                 />
   </url>
   
