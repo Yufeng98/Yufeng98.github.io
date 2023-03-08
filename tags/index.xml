@@ -5,10 +5,6 @@
     <link>https://guyufeng.cn/tags/</link>
     <description>Recent content in Tags on Yufeng Gu</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://guyufeng.cn/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://guyufeng.cn/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
