@@ -54,7 +54,7 @@
     <link rel="icon" type="image/png" href="https://guyufeng.cn/images/yg-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://guyufeng.cn/images/yg-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="generator" content="Hugo 0.92.2" />
   </head>
 
   <body class=" ">
@@ -70,19 +70,7 @@
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/about">Home</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/about/">About</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/publications/">Publications</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/files/Yufeng_Gu_CV.pdf">CV</a>
+            <a class="navigation-link" href="https://guyufeng.cn/">Home</a>
           </li>
         
           <li class="navigation-item">
@@ -90,24 +78,6 @@
           </li>
         
       
-      
-        
-        
-        
-          
-        
-          
-            
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              
-            
-            <li class="navigation-item">
-              <a href="https://guyufeng.cn/cn-br/">Chinese</a>
-            </li>
-          
-        
       
     </ul>
   </section>
@@ -144,14 +114,14 @@
         <h1 id="tmux-tutorial">Tmux Tutorial</h1>
 <h3 id="commands">Commands</h3>
 <h4 id="session-management">Session Management</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>tmux [new -s &lt;session-name&gt; -m &lt;window-name&gt;]
-</span></span><span style="display:flex;"><span>tmux detach
-</span></span><span style="display:flex;"><span>tmux a[ttach] -t &lt;session-name&gt;
-</span></span><span style="display:flex;"><span>tmux switch -t 
-</span></span><span style="display:flex;"><span>tmux ls
-</span></span><span style="display:flex;"><span>tmux kill-session -t &lt;session-name&gt;
-</span></span><span style="display:flex;"><span>tmux kill-server <span style="color:#007f7f"># kill all sessions</span>
-</span></span></code></pre></div><h4 id="prefix-commands-ctrlb">Prefix Commands Ctrl+b</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">tmux [new -s &lt;session-name&gt; -m &lt;window-name&gt;]
+tmux detach
+tmux a[ttach] -t &lt;session-name&gt;
+tmux switch -t 
+tmux ls
+tmux kill-session -t &lt;session-name&gt;
+tmux kill-server <span style="color:#007f7f"># kill all sessions</span>
+</code></pre></div><h4 id="prefix-commands-ctrlb">Prefix Commands Ctrl+b</h4>
 <h4 id="session">Session</h4>
 <ul>
 <li><code>:new&lt;Enter&gt;</code>     create a new session</li>
@@ -173,10 +143,10 @@
 <li><code>x</code>               close current pane</li>
 </ul>
 <h3 id="configuration">Configuration</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/Yufeng98/.tmux.git
-</span></span><span style="display:flex;"><span>cp .tmux/.tmux.conf .
-</span></span><span style="display:flex;"><span>cp .tmux/.tmux.conf.local .
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/Yufeng98/.tmux.git
+cp .tmux/.tmux.conf .
+cp .tmux/.tmux.conf.local .
+</code></pre></div>
       </div>
 
       <footer>

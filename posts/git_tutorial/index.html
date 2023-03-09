@@ -54,7 +54,7 @@
     <link rel="icon" type="image/png" href="https://guyufeng.cn/images/yg-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://guyufeng.cn/images/yg-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="generator" content="Hugo 0.92.2" />
   </head>
 
   <body class=" ">
@@ -70,19 +70,7 @@
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/about">Home</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/about/">About</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/publications/">Publications</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://guyufeng.cn/files/Yufeng_Gu_CV.pdf">CV</a>
+            <a class="navigation-link" href="https://guyufeng.cn/">Home</a>
           </li>
         
           <li class="navigation-item">
@@ -90,24 +78,6 @@
           </li>
         
       
-      
-        
-        
-        
-          
-        
-          
-            
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              
-            
-            <li class="navigation-item">
-              <a href="https://guyufeng.cn/cn-br/">Chinese</a>
-            </li>
-          
-        
       
     </ul>
   </section>
@@ -143,207 +113,207 @@
       <div>
         <h1 id="git-tutorial">Git Tutorial</h1>
 <h3 id="basic-instructions">Basic instructions</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git [command] [--flags] [arguments]
-</span></span><span style="display:flex;"><span>git status [-s]
-</span></span><span style="display:flex;"><span>git log [--oneline] [-<span style="color:#0ff;font-weight:bold">${</span>num of line<span style="color:#0ff;font-weight:bold">}</span>]
-</span></span><span style="display:flex;"><span>git clone &lt;remote_url&gt; [localprojectname]
-</span></span><span style="display:flex;"><span>git remote add &lt;name&gt; &lt;remote_url&gt;
-</span></span><span style="display:flex;"><span>git push [-u] [&lt;remote&gt;] [&lt;branch&gt;]
-</span></span><span style="display:flex;"><span>git show HEAD~(parent) ~2(parent of parent) ^(first parent) ^2(second parent)
-</span></span><span style="display:flex;"><span>git tag &lt;tagname&gt; [&lt;commit&gt;]
-</span></span><span style="display:flex;"><span>git push &lt;remote&gt; &lt;tagname&gt;
-</span></span><span style="display:flex;"><span>git checkout -b &lt;branch&gt;
-</span></span><span style="display:flex;"><span>git branch --all
-</span></span><span style="display:flex;"><span>git branch -d &lt;branch&gt;
-</span></span><span style="display:flex;"><span>git merge --no-ff &lt;branch&gt;
-</span></span><span style="display:flex;"><span>git commit --amend --no-edit
-</span></span></code></pre></div><h3 id="create-and-make-an-initial-push">Create and make an initial push</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir machine_1
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> machine_1
-</span></span><span style="display:flex;"><span>git init            <span style="color:#007f7f"># initialize git in current directory</span>
-</span></span><span style="display:flex;"><span>git status          <span style="color:#007f7f"># show changes of the Working Tree</span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Create hello.py</span>
-</span></span><span style="display:flex;"><span>git add .           <span style="color:#007f7f"># update changes in the Staging Area/Index</span>
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#34;Hello World!&#34;</span>    <span style="color:#007f7f"># update changes in the Commit Tree</span>
-</span></span><span style="display:flex;"><span>git remote add origin https://github.com/Yufeng98/git_tutorial.git
-</span></span><span style="display:flex;"><span>git push origin master
-</span></span></code></pre></div><p>See details in <a href="https://github.com/Yufeng98/git_tutorial">git_tutorial</a> repositary.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git [command] [--flags] [arguments]
+git status [-s]
+git log [--oneline] [-<span style="color:#0ff;font-weight:bold">${</span>num of line<span style="color:#0ff;font-weight:bold">}</span>]
+git clone &lt;remote_url&gt; [localprojectname]
+git remote add &lt;name&gt; &lt;remote_url&gt;
+git push [-u] [&lt;remote&gt;] [&lt;branch&gt;]
+git show HEAD~(parent) ~2(parent of parent) ^(first parent) ^2(second parent)
+git tag &lt;tagname&gt; [&lt;commit&gt;]
+git push &lt;remote&gt; &lt;tagname&gt;
+git checkout -b &lt;branch&gt;
+git branch --all
+git branch -d &lt;branch&gt;
+git merge --no-ff &lt;branch&gt;
+git commit --amend --no-edit
+</code></pre></div><h3 id="create-and-make-an-initial-push">Create and make an initial push</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mkdir machine_1
+<span style="color:#fff;font-weight:bold">cd</span> machine_1
+git init            <span style="color:#007f7f"># initialize git in current directory</span>
+git status          <span style="color:#007f7f"># show changes of the Working Tree</span>
+<span style="color:#007f7f"># Create hello.py</span>
+git add .           <span style="color:#007f7f"># update changes in the Staging Area/Index</span>
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Hello World!&#34;</span>    <span style="color:#007f7f"># update changes in the Commit Tree</span>
+git remote add origin https://github.com/Yufeng98/git_tutorial.git
+git push origin master
+</code></pre></div><p>See details in <a href="https://github.com/Yufeng98/git_tutorial">git_tutorial</a> repositary.</p>
 <h3 id="version-control-via-branch">Version control via branch</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout -b cat     <span style="color:#007f7f"># create and move to a new branch named cat</span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Add functionality cat to hello.py</span>
-</span></span><span style="display:flex;"><span>git add .               
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#34;Cat&#34;</span>
-</span></span><span style="display:flex;"><span>git checkout master     <span style="color:#007f7f"># move to master branch</span>
-</span></span><span style="display:flex;"><span>git checkout -b dog
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Add functionality dog to hello.py</span>
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#34;dog&#34;</span>
-</span></span><span style="display:flex;"><span>git commit --amend -m <span style="color:#0ff;font-weight:bold">&#34;Dog&#34;</span>
-</span></span><span style="display:flex;"><span>git checkout master
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph     <span style="color:#007f7f"># show current git log as graph</span>
-</span></span><span style="display:flex;"><span>* 7d77519 (dog) Dog
-</span></span><span style="display:flex;"><span>| * 4a3d17c (cat) Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 (HEAD -&gt; master, origin/master) Hello World
-</span></span></code></pre></div><h3 id="merge-two-branches">Merge two branches</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout -b animal
-</span></span><span style="display:flex;"><span>git merge cat
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># animal branch is created based on master, cat branch is also based on master, so cat can be merged to animal without conflictions.</span>
-</span></span><span style="display:flex;"><span>git merge dog       <span style="color:#007f7f"># fail because of confliction</span>
-</span></span><span style="display:flex;"><span>vim hello.py        <span style="color:#007f7f"># deal with confliction</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</span></span><span style="display:flex;"><span>def cat():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#0ff;font-weight:bold">&#34;Cat!&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
-</span></span><span style="display:flex;"><span>    cat()
-</span></span><span style="display:flex;"><span>=======
-</span></span><span style="display:flex;"><span>def dog();
-</span></span><span style="display:flex;"><span>    print(<span style="color:#0ff;font-weight:bold">&#34;Dog!&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
-</span></span><span style="display:flex;"><span>    dog()
-</span></span><span style="display:flex;"><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; dog
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># delete &lt;&lt;&lt; === &gt;&gt;&gt; and commit changes</span>
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>*   e79f0bd (HEAD -&gt; animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 (dog) Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c (cat) Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 (origin/master, master) Hello World
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git checkout master
-</span></span><span style="display:flex;"><span>git merge animals
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>*   e79f0bd (HEAD -&gt; master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 (dog) Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c (cat) Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 (origin/master) Hello World
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git push
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>*   e79f0bd (HEAD -&gt; master, origin/master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 (dog) Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c (cat) Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 Hello World
-</span></span></code></pre></div><h3 id="collaboration">Collaboration</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/Yufeng98/git_tutorial machine_2
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> machine_2
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Add functionality fish to hello.py</span>
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#34;Fish&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># Add functionality duck to hello.py</span>
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0ff;font-weight:bold">&#34;Duck&#34;</span>
-</span></span><span style="display:flex;"><span>git reset --hard <span style="color:#0ff;font-weight:bold">${</span>hash of fish<span style="color:#0ff;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>* b9d2299 (master) Duck
-</span></span><span style="display:flex;"><span>* 62a9ec4 (HEAD) Fish
-</span></span><span style="display:flex;"><span>*   e79f0bd (origin/master, origin/HEAD) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 Hello World
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git push origin HEAD:master
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> ../machine_1
-</span></span><span style="display:flex;"><span>git fetch
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>* 62a9ec4 (origin/master) Fish
-</span></span><span style="display:flex;"><span>*   e79f0bd (HEAD -&gt; master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 (dog) Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c (cat) Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 Hello World
-</span></span><span style="display:flex;"><span>git merge origin/master     <span style="color:#007f7f"># git pull is similar to git fetch and merge</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># add functionality tiger to hello.py and update it to remote repository</span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> ../machine_2
-</span></span><span style="display:flex;"><span>git fetch
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>* f96f96d (origin/master, origin/HEAD) Tiger
-</span></span><span style="display:flex;"><span>| * b9d2299 (master) Duck
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 62a9ec4 (HEAD) Fish
-</span></span><span style="display:flex;"><span>*   e79f0bd Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 Hello World
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git checkout master
-</span></span><span style="display:flex;"><span>vim hello.py
-</span></span><span style="display:flex;"><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</span></span><span style="display:flex;"><span>def duck():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#0ff;font-weight:bold">&#34;Duck!&#34;</span>)
-</span></span><span style="display:flex;"><span>=======
-</span></span><span style="display:flex;"><span>def tiger():
-</span></span><span style="display:flex;"><span>    print(<span style="color:#0ff;font-weight:bold">&#34;Tiger!&#34;</span>)
-</span></span><span style="display:flex;"><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; f96f96dba513b1c0b6e44a7191d0ff1f3fdf33e8
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
-</span></span><span style="display:flex;"><span>    hello()
-</span></span><span style="display:flex;"><span>    cat()
-</span></span><span style="display:flex;"><span>    dog()
-</span></span><span style="display:flex;"><span>    fish()
-</span></span><span style="display:flex;"><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</span></span><span style="display:flex;"><span>    duck()
-</span></span><span style="display:flex;"><span>=======
-</span></span><span style="display:flex;"><span>    tiger()
-</span></span><span style="display:flex;"><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; f96f96dba513b1c0b6e44a7191d0ff1f3fdf33e8
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#007f7f"># delete &lt;&lt;&lt; === &gt;&gt;&gt; and commit changes</span>
-</span></span><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>*   de3b050 (HEAD -&gt; master) Merge branch <span style="color:#0ff;font-weight:bold">&#39;master&#39;</span> of https://github.com/Yufeng98/git_tutorial into master
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * f96f96d (origin/master, origin/HEAD) Tiger
-</span></span><span style="display:flex;"><span>* | b9d2299 Duck
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 62a9ec4 Fish
-</span></span><span style="display:flex;"><span>*   e79f0bd Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 Hello World
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git push
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">cd</span> ../machine_1
-</span></span><span style="display:flex;"><span>git fetch
-</span></span><span style="display:flex;"><span>git merge origin/master
-</span></span><span style="display:flex;"><span>git log --oneline --all --graph
-</span></span><span style="display:flex;"><span>*   de3b050 (HEAD -&gt; master, origin/master) Merge branch <span style="color:#0ff;font-weight:bold">&#39;master&#39;</span> of https://github.com/Yufeng98/git_tutorial into master
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * f96f96d Tiger
-</span></span><span style="display:flex;"><span>* | b9d2299 Duck
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 62a9ec4 Fish
-</span></span><span style="display:flex;"><span>*   e79f0bd (animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
-</span></span><span style="display:flex;"><span>|<span style="color:#0ff;font-weight:bold">\ </span> 
-</span></span><span style="display:flex;"><span>| * 7d77519 (dog) Dog
-</span></span><span style="display:flex;"><span>* | 4a3d17c (cat) Cat
-</span></span><span style="display:flex;"><span>|/  
-</span></span><span style="display:flex;"><span>* 7ff98a6 Hello World
-</span></span></code></pre></div><h3 id="bothered-by-redundant-commits">Bothered by redundant commits?</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git log
-</span></span><span style="display:flex;"><span>git rebase -i <span style="color:#0ff;font-weight:bold">${</span>commit ID<span style="color:#0ff;font-weight:bold">}</span>
-</span></span></code></pre></div><p>Replace <code>pick</code> with <code>squash</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b cat     <span style="color:#007f7f"># create and move to a new branch named cat</span>
+<span style="color:#007f7f"># Add functionality cat to hello.py</span>
+git add .               
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Cat&#34;</span>
+git checkout master     <span style="color:#007f7f"># move to master branch</span>
+git checkout -b dog
+<span style="color:#007f7f"># Add functionality dog to hello.py</span>
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;dog&#34;</span>
+git commit --amend -m <span style="color:#0ff;font-weight:bold">&#34;Dog&#34;</span>
+git checkout master
+git log --oneline --all --graph     <span style="color:#007f7f"># show current git log as graph</span>
+* 7d77519 (dog) Dog
+| * 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 (HEAD -&gt; master, origin/master) Hello World
+</code></pre></div><h3 id="merge-two-branches">Merge two branches</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b animal
+git merge cat
+<span style="color:#007f7f"># animal branch is created based on master, cat branch is also based on master, so cat can be merged to animal without conflictions.</span>
+git merge dog       <span style="color:#007f7f"># fail because of confliction</span>
+vim hello.py        <span style="color:#007f7f"># deal with confliction</span>
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+def cat():
+    print(<span style="color:#0ff;font-weight:bold">&#34;Cat!&#34;</span>)
+
+<span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+    cat()
+=======
+def dog();
+    print(<span style="color:#0ff;font-weight:bold">&#34;Dog!&#34;</span>)
+
+<span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+    dog()
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; dog
+
+<span style="color:#007f7f"># delete &lt;&lt;&lt; === &gt;&gt;&gt; and commit changes</span>
+git add .
+git commit
+git log --oneline --all --graph
+*   e79f0bd (HEAD -&gt; animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 (origin/master, master) Hello World
+
+git checkout master
+git merge animals
+git log --oneline --all --graph
+*   e79f0bd (HEAD -&gt; master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 (origin/master) Hello World
+
+git push
+git log --oneline --all --graph
+*   e79f0bd (HEAD -&gt; master, origin/master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 Hello World
+</code></pre></div><h3 id="collaboration">Collaboration</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/Yufeng98/git_tutorial machine_2
+<span style="color:#fff;font-weight:bold">cd</span> machine_2
+<span style="color:#007f7f"># Add functionality fish to hello.py</span>
+git add .
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Fish&#34;</span>
+<span style="color:#007f7f"># Add functionality duck to hello.py</span>
+git add .
+git commit -m <span style="color:#0ff;font-weight:bold">&#34;Duck&#34;</span>
+git reset --hard <span style="color:#0ff;font-weight:bold">${</span>hash of fish<span style="color:#0ff;font-weight:bold">}</span>
+git log --oneline --all --graph
+* b9d2299 (master) Duck
+* 62a9ec4 (HEAD) Fish
+*   e79f0bd (origin/master, origin/HEAD) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 Dog
+* | 4a3d17c Cat
+|/  
+* 7ff98a6 Hello World
+
+git push origin HEAD:master
+<span style="color:#fff;font-weight:bold">cd</span> ../machine_1
+git fetch
+git log --oneline --all --graph
+* 62a9ec4 (origin/master) Fish
+*   e79f0bd (HEAD -&gt; master, animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 Hello World
+git merge origin/master     <span style="color:#007f7f"># git pull is similar to git fetch and merge</span>
+
+<span style="color:#007f7f"># add functionality tiger to hello.py and update it to remote repository</span>
+<span style="color:#fff;font-weight:bold">cd</span> ../machine_2
+git fetch
+git log --oneline --all --graph
+* f96f96d (origin/master, origin/HEAD) Tiger
+| * b9d2299 (master) Duck
+|/  
+* 62a9ec4 (HEAD) Fish
+*   e79f0bd Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 Dog
+* | 4a3d17c Cat
+|/  
+* 7ff98a6 Hello World
+
+git checkout master
+vim hello.py
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+def duck():
+    print(<span style="color:#0ff;font-weight:bold">&#34;Duck!&#34;</span>)
+=======
+def tiger():
+    print(<span style="color:#0ff;font-weight:bold">&#34;Tiger!&#34;</span>)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; f96f96dba513b1c0b6e44a7191d0ff1f3fdf33e8
+
+<span style="color:#fff;font-weight:bold">if</span> __name__ == <span style="color:#0ff;font-weight:bold">&#39;__main__&#39;</span>:
+    hello()
+    cat()
+    dog()
+    fish()
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    duck()
+=======
+    tiger()
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; f96f96dba513b1c0b6e44a7191d0ff1f3fdf33e8
+
+<span style="color:#007f7f"># delete &lt;&lt;&lt; === &gt;&gt;&gt; and commit changes</span>
+git add .
+git commit
+git log --oneline --all --graph
+*   de3b050 (HEAD -&gt; master) Merge branch <span style="color:#0ff;font-weight:bold">&#39;master&#39;</span> of https://github.com/Yufeng98/git_tutorial into master
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * f96f96d (origin/master, origin/HEAD) Tiger
+* | b9d2299 Duck
+|/  
+* 62a9ec4 Fish
+*   e79f0bd Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 Dog
+* | 4a3d17c Cat
+|/  
+* 7ff98a6 Hello World
+
+git push
+<span style="color:#fff;font-weight:bold">cd</span> ../machine_1
+git fetch
+git merge origin/master
+git log --oneline --all --graph
+*   de3b050 (HEAD -&gt; master, origin/master) Merge branch <span style="color:#0ff;font-weight:bold">&#39;master&#39;</span> of https://github.com/Yufeng98/git_tutorial into master
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * f96f96d Tiger
+* | b9d2299 Duck
+|/  
+* 62a9ec4 Fish
+*   e79f0bd (animal) Merge branch <span style="color:#0ff;font-weight:bold">&#39;dog&#39;</span> into animal
+|<span style="color:#0ff;font-weight:bold">\ </span> 
+| * 7d77519 (dog) Dog
+* | 4a3d17c (cat) Cat
+|/  
+* 7ff98a6 Hello World
+</code></pre></div><h3 id="bothered-by-redundant-commits">Bothered by redundant commits?</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git log
+git rebase -i <span style="color:#0ff;font-weight:bold">${</span>commit ID<span style="color:#0ff;font-weight:bold">}</span>
+</code></pre></div><p>Replace <code>pick</code> with <code>squash</code></p>
 <p>Specify name of commite</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push -f
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -f
+</code></pre></div>
       </div>
 
       <footer>
