@@ -160,6 +160,11 @@ name {
   margin-left: 2px;
 }
 
+.tab_3 {
+  display: inline-block;
+  margin-left: 3px;
+}
+
 .tab_4 {
   display: inline-block;
   margin-left: 4px;
