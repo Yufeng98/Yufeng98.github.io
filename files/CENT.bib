@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3676641.3716267,
+author = {Gu, Yufeng and Khadem, Alireza and Umesh, Sumanth and Liang, Ning and Servot, Xavier and Mutlu, Onur and Iyer, Ravi and Das, Reetuparna},
+title = {PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference},
+year = {2025},
+isbn = {9798400710797},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3676641.3716267},
+doi = {10.1145/3676641.3716267},
+abstract = {Large Language Model (LLM) inference uses an autoregressive manner to generate one token at a time, which exhibits notably lower operational intensity compared to earlier Machine Learning (ML) models such as encoder-only transformers and Convolutional Neural Networks. At the same time, LLMs possess large parameter sizes and use key-value caches to store context information. Modern LLMs support context windows with up to 1 million tokens to generate versatile text, audio, and video content. A large key-value cache unique to each prompt requires a large memory capacity, limiting the inference batch size. Both low operational intensity and limited batch size necessitate a high memory bandwidth. However, contemporary hardware systems for ML model deployment, such as GPUs and TPUs, are primarily optimized for compute throughput. This mismatch challenges the efficient deployment of advanced LLMs and makes users to pay for expensive compute resources that are poorly utilized for the memory-bound LLM inference tasks.We propose CENT, a CXL-ENabled GPU-Free sysTem for LLM inference, which harnesses CXL memory expansion capabilities to accommodate substantial LLM sizes, and utilizes near-bank processing units to deliver high memory bandwidth, eliminating the need for expensive GPUs. CENT exploits a scalable CXL network to support peer-to-peer and collective communication primitives across CXL devices. We implement various parallelism strategies to distribute LLMs across these devices. Compared to GPU baselines with maximum supported batch sizes and similar average power, CENT achieves 2.3x higher throughput and consumes 2.3x less energy. CENT reduces the Total Cost of Ownership (TCO), generating 5.2x more tokens per dollar than GPUs.},
+booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+pages = {862–881},
+numpages = {20},
+keywords = {compute express link, computer architecture, generative artificial intelligence, large language models, processing-in-memory},
+location = {Rotterdam, Netherlands},
+series = {ASPLOS '25}
+}
