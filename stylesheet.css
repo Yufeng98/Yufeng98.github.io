@@ -81,12 +81,12 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, Lato;
-  font-size: 15px
+  font-size: 17px
 }
 
 h2 {
   font-family: 'Lato', Verdana, Helvetica, Lato;
-  font-size: 22px;
+  font-size: 24px;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
@@ -117,7 +117,7 @@ h4 {
 
 h1 {
   font-family: 'Lato', Verdana, Helvetica, Lato;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: normal;
   font-display: auto;
   text-align: center;
@@ -148,7 +148,7 @@ strong {
 
 name {
   font-family: 'Lato', Verdana, Helvetica, Lato;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .tab {
