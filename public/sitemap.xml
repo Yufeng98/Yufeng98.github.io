@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/public/blogs/</loc>
+    <loc>https://yufeng98.github.io/public/blogs/</loc>
     <lastmod>2020-08-17T08:37:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/public/blogs/git-tutorial/</loc>
+    <loc>https://yufeng98.github.io/public/blogs/git-tutorial/</loc>
     <lastmod>2020-08-17T08:37:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/public/</loc>
+    <loc>https://yufeng98.github.io/public/</loc>
     <lastmod>2020-08-17T08:37:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/public/blogs/tmux-tutorial/</loc>
+    <loc>https://yufeng98.github.io/public/blogs/tmux-tutorial/</loc>
     <lastmod>2020-06-05T08:37:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/public/blogs/vim-tutorial/</loc>
+    <loc>https://yufeng98.github.io/public/blogs/vim-tutorial/</loc>
     <lastmod>2020-06-03T08:37:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/public/blogs/hugo-tutorial/</loc>
+    <loc>https://yufeng98.github.io/public/blogs/hugo-tutorial/</loc>
     <lastmod>2020-06-01T08:37:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/public/archives/</loc>
+    <loc>https://yufeng98.github.io/public/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/public/categories/</loc>
+    <loc>https://yufeng98.github.io/public/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/public/search/</loc>
+    <loc>https://yufeng98.github.io/public/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/public/series/</loc>
+    <loc>https://yufeng98.github.io/public/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/public/tags/</loc>
+    <loc>https://yufeng98.github.io/public/tags/</loc>
   </url>
 </urlset>

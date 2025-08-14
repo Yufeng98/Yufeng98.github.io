@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://localhost:1313/public/sitemap.xml
+Sitemap: https://yufeng98.github.io/public/sitemap.xml

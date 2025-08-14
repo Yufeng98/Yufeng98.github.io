@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Yufeng Gu</title>
-    <link>http://localhost:1313/public/</link>
+    <link>https://yufeng98.github.io/public/</link>
     <description>Recent content on Yufeng Gu</description>
     <image>
       <title>Yufeng Gu</title>
-      <url>http://localhost:1313/public/images/papermod-cover.png</url>
-      <link>http://localhost:1313/public/images/papermod-cover.png</link>
+      <url>https://yufeng98.github.io/public/images/papermod-cover.png</url>
+      <link>https://yufeng98.github.io/public/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Aug 2020 08:37:58 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/public/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yufeng98.github.io/public/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Tutorial</title>
-      <link>http://localhost:1313/public/blogs/git-tutorial/</link>
+      <link>https://yufeng98.github.io/public/blogs/git-tutorial/</link>
       <pubDate>Mon, 17 Aug 2020 08:37:58 +0800</pubDate>
-      <guid>http://localhost:1313/public/blogs/git-tutorial/</guid>
+      <guid>https://yufeng98.github.io/public/blogs/git-tutorial/</guid>
       <description>Git Tutorial</description>
     </item>
     <item>
       <title>Tmux Tutorial</title>
-      <link>http://localhost:1313/public/blogs/tmux-tutorial/</link>
+      <link>https://yufeng98.github.io/public/blogs/tmux-tutorial/</link>
       <pubDate>Fri, 05 Jun 2020 08:37:58 +0800</pubDate>
-      <guid>http://localhost:1313/public/blogs/tmux-tutorial/</guid>
+      <guid>https://yufeng98.github.io/public/blogs/tmux-tutorial/</guid>
       <description>Tmux Tutorial</description>
     </item>
     <item>
       <title>Vim Tutorial</title>
-      <link>http://localhost:1313/public/blogs/vim-tutorial/</link>
+      <link>https://yufeng98.github.io/public/blogs/vim-tutorial/</link>
       <pubDate>Wed, 03 Jun 2020 08:37:58 +0800</pubDate>
-      <guid>http://localhost:1313/public/blogs/vim-tutorial/</guid>
+      <guid>https://yufeng98.github.io/public/blogs/vim-tutorial/</guid>
       <description>Vim Tutorial</description>
     </item>
     <item>
       <title>Hugo Tutorial</title>
-      <link>http://localhost:1313/public/blogs/hugo-tutorial/</link>
+      <link>https://yufeng98.github.io/public/blogs/hugo-tutorial/</link>
       <pubDate>Mon, 01 Jun 2020 08:37:58 +0800</pubDate>
-      <guid>http://localhost:1313/public/blogs/hugo-tutorial/</guid>
+      <guid>https://yufeng98.github.io/public/blogs/hugo-tutorial/</guid>
       <description>Hugo Tutorial</description>
     </item>
   </channel>
