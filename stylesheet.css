@@ -206,7 +206,7 @@ span.highlight {
 
 .news-scroll {
   margin-top: 20px;
-  max-height: 256px;
+  max-height: 240px;
   overflow-y: auto;
   padding-right: 8px;
   border: 1px solid #eaeaea;
@@ -225,7 +225,7 @@ span.highlight {
   padding: 6px 6px 6px 24px;
 }
 .news-scroll li {
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 [id^="pub-"] {
