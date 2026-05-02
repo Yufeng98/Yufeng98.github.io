@@ -204,6 +204,34 @@ span.highlight {
 ::-webkit-scrollbar {width: 10px;height: 10px;}
 ::-webkit-scrollbar-thumb {background-color: #656D78;background-clip: padding-box;border: 3px solid transparent;border-radius:5px;}
 
+.news-scroll {
+  margin-top: 20px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 8px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.research-topics li {
+  margin-bottom: 4px;
+}
+.research-topics ul {
+  margin-top: 3px;
+}
+.news-scroll ul {
+  margin: 0;
+  padding: 6px 6px 6px 24px;
+}
+.news-scroll li {
+  margin-bottom: 6px;
+}
+
+[id^="pub-"] {
+  scroll-margin-top: 16px;
+}
+
 @media (max-width: 486px) {
   .hide-small {
     display: none;
