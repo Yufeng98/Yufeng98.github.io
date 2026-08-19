@@ -30,7 +30,7 @@
                 <h1 style="text-align: center;">Yufeng Gu</h1>
 
                 <p>
-                  I am a Research Scientist at <a href="https://aisystemcodesign.github.io/">AI System Co-Design</a>, Meta Platform, Inc. I obtained my Ph.D. at <a href="https://www.umich.edu/">University of Michigan</a>, advised by <a href="https://web.eecs.umich.edu/~reetudas/">Prof. Reetuparna Das</a>. I am working closely with <a href="https://blaauw.engin.umich.edu/">Prof. David Blaauw</a> and <a href="http://web.eecs.umich.edu/~nsatish/">Prof. Satish Narayanasamy</a>. My research focuses on computer architecture and system, and has been selected as <a href="https://eecs.engin.umich.edu/stories/u-m-teams-genome-sequencing-breakthrough-featured-in-cacm-research-highlights">Communications of ACM Research Highlights</a>. Before UMich, I obtained a bachelor's degree from <a href="http://www.zju.edu.cn/english/">Zhejiang University</a> in 2020.
+                  I am a Research Scientist at <a href="https://aisystemcodesign.github.io/">AI System Co-Design</a>, Meta Platform, Inc. I obtained my Ph.D. at <a href="https://www.umich.edu/">University of Michigan</a>, advised by <a href="https://web.eecs.umich.edu/~reetudas/">Prof. Reetuparna Das</a>. I worked closely with <a href="https://blaauw.engin.umich.edu/">Prof. David Blaauw</a> and <a href="http://web.eecs.umich.edu/~nsatish/">Prof. Satish Narayanasamy</a>. My research focuses on computer architecture and system, and has been selected as <a href="https://eecs.engin.umich.edu/stories/u-m-teams-genome-sequencing-breakthrough-featured-in-cacm-research-highlights">Communications of ACM Research Highlights</a>. Before UMich, I obtained a bachelor's degree from <a href="http://www.zju.edu.cn/english/">Zhejiang University</a> in 2020.
                 </p>
 
                 <!-- <p>
@@ -63,11 +63,12 @@
                 My research focuses on computer architecture, hardware/software co-design, processing-in-memory, resource provisioning and scheduling. I built novel hardware and system solutions on accelerating large scale emerging applications, including generative artificial intelligence (GenAI) and precision health:
               </p>
               <ul class="research-topics">
-                <li><b>Memory-centric architecture:</b>
+                <li><b>Data movement-centric architecture:</b>
                   <ul>
-                    <li>CXL-PIM system for efficient LLM inference (<a href="#pub-cent">ASPLOS'25</a>)</li>
+                    <li>Processing-in-memory system (<a href="#pub-cent">ASPLOS'25</a>, <a href="#pub-mve">HPCA'25</a>)</li>
                     <li>Data access acceleration (<a href="#pub-dx100">ISCA'25</a>)</li>
-                    <li>Mobile in-cache computing (<a href="#pub-mve">HPCA'25</a>)</li>
+                    <!-- <li>Mobile in-cache computing (<a href="#pub-mve">HPCA'25</a>)</li> -->
+                    <li>GPU Fabric Scheduling (<a href="#pub-gpuweaver">APSys'26</a>)</li>
                   </ul>
                 </li>
                 <li><b>Scientific computing and genome sequencing analysis:</b>
@@ -89,11 +90,13 @@
                 <div class="news-scroll">
                 <ul>
 
+                  <li> GPUWeaver is accepted to <a href="https://apsys26.github.io/">APSys 2026</a>. Congrats, Danyang!
+
                   <li> I joined <a href="https://aisystemcodesign.github.io/">AI System Co-Design</a> at Meta Platforms, Inc. in May 2026. <br>
 
                   <li> I defended my <a href="https://eecs.engin.umich.edu/event/architecture-and-system-co-design-for-large-scale-emerging-applications/">PhD thesis</a> on Architecture and System Co-Design for Large-Scale Emerging Applications.
 
-                  <li> <a href="https://63dac.conference-program.com/presentation/?id=RESEARCH1793&sess=sess131">Stone-Skimming</a> is accepted to <a href="https://www.dac.com/">DAC 2026</a>. See you in Long Beach!
+                  <li> <a href="https://63dac.conference-program.com/presentation/?id=RESEARCH1793&sess=sess131">Stone-Skimming</a> is accepted to <a href="https://www.dac.com/">DAC 2026</a>. Congrats, Jiajun and Yu!
 
                   <li> <a href="https://www.csl.cornell.edu/~cbatten/pdfs/kaplan-panobench-iiswc2025.pdf">PangenomicsBench</a> is accepted to <a href="https://iiswc.org/iiswc2025/"> IISWC 2025</a>. See you in Irvine!
 
@@ -131,27 +134,42 @@
         
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <td style="padding:0.0% 3%;width:100%;vertical-align:middle">
-              <p id="pub-stoneskimming">
+              <p id="pub-gpuweaver">
+                <b>Unlocking Software-defined GPU Fabric Scheduling in the LLM Era</b><br>
+                Danyang Chen*, <u><b>Yufeng Gu</b></u>*, Yibo Huang, Chengxuan Pei, Peichun Hua, Yang Zhou, Yunming Xiao <br>
+                <b style="color: #1772d0;">APSys 2026</b>
+              </p>
+
+              <!-- <p id="pub-stoneskimming">
                 <b>Stone-Skimming: Attacking Big-Data Analytics Applications with Page Table Walk</b><br>
                 Jiajun Luo*, Yu Jin*, <u><b>Yufeng Gu</b></u>, Jinyi Deng, Yang Hu, Shuwen Deng <br>
                 <b style="color: #1772d0;">DAC 2026</b> &nbsp;/&nbsp;
                 <a href="https://63dac.conference-program.com/presentation/?id=RESEARCH1793&sess=sess131">to appear</a>
-              </p>
+              </p> -->
 
-              <p id="pub-pangenomicsbench">
+              <!-- <p id="pub-pangenomicsbench">
                 <b>PangenomicsBench: A Benchmark Suite and Characterization of Pangenomics</b><br>
                 Noah Kaplan, Jan-Niklas Schmelzle, <u><b>Yufeng Gu</b></u>, Christopher Batten, Reetuparna Das <br>
                 <b style="color: #1772d0;">IISWC 2025</b> &nbsp;/&nbsp;
                 <a href="https://www.csl.cornell.edu/~cbatten/pdfs/kaplan-panobench-iiswc2025.pdf">Paper</a> &nbsp;/&nbsp;
                 <a href="https://github.com/UM-mbit/pangenomicsBench">Code</a> &nbsp;
-                <!-- <a href="https://github.com/UM-mbit/pangenomicsBench" target="_blank" rel="noopener">
+                <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current#available" target="_blank" rel="noopener">
+                  <img
+                    src="images/artifacts_available_v1_1.png"
+                    alt="Artifact Available"
+                    width="18"
+                    height="auto"
+                    style="display:inline-block; position:relative; top:0.2em;"
+                  />
+                </a> &nbsp;
+                <a href="https://github.com/UM-mbit/pangenomicsBench" target="_blank" rel="noopener">
                   <img
                     src="https://img.shields.io/github/stars/UM-mbit/pangenomicsBench?style=social&label=Stars"
                     alt="GitHub stars"
                     style="display:inline-block; position:relative; top:0.25em;"
                   />
-                </a> -->
-              </p>
+                </a>
+              </p> -->
 
               <p id="pub-gendp-cacm">
                 <b>GenDP: A Framework of Dynamic Programming Acceleration for Genome Sequencing Analysis</b> (Invited Paper) <br>
@@ -335,7 +353,7 @@
                 </p>
 
                 
-                <p id="pub-genomicsbench">
+                <!-- <p id="pub-genomicsbench">
                   <b>GenomicsBench: A Benchmark Suite for Genomics</b><br>
                   Arun Subramaniyan, <u><b>Yufeng Gu</b></u>, Tim Dunn, Somnath Paul, Md Vasimuddin, Sanchit Misra, Satish Narayanasamy, David Blaauw, Reetuparna Das <br>
                   </span>
@@ -352,7 +370,7 @@
                       style="display:inline-block; position:relative; top:0.25em;"
                     />
                   </a>
-                </p>
+                </p> -->
 
                 <!-- <p>
                   <b>Multi-site fMRI Analysis Using Privacy-preserving Federated Learning and Domain Adaptation: ABIDE Results</b><br>
@@ -424,6 +442,10 @@
             <td style="padding:1.0% 2.5%;width:100%;vertical-align:middle">
               <h2>Services</h2>
               <ul>
+                <li>Program Committee</li>
+                <ul>
+                  <li>HPCA 2027</li>
+                </ul>
                 <li>Journal reviewer
                   <ul>
                     <li>IEEE Transactions on Computers (TC)</li>
