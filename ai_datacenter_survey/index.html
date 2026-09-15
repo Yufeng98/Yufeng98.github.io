@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture</title>
+<meta name="description" content="Project page for the survey Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture, with an interactive chart of AI model and accelerator scaling trends.">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.6.0/echarts.min.js"></script>
+<script src="data/scaling_data.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="site-header">
+  <h1>Balancing Generality and Specialization: A&nbsp;Survey on AI Datacenter Hardware Architecture</h1>
+  <p class="authors"><span>Yufeng Gu</span>, <span>Jiazhen Wang</span>, <span>Reetuparna Das</span> &mdash; University of Michigan</p>
+  <div class="links">
+    <a class="btn primary" id="paper-link" href="#" hidden>Paper (PDF)</a>
+    <a class="btn" href="https://github.com/Yufeng98/AI-datacenter" target="_blank" rel="noopener">Open research corpus on GitHub</a>
+    <a class="btn" href="#scaling">Interactive scaling chart</a>
+  </div>
+</header>
+
+<section id="intro">
+  <h2>About the survey</h2>
+  <p class="lede">Rapidly growing AI workloads are driving large investments in AI datacenters. This survey classifies industrial AI accelerators into four architectural categories and compares their compute and memory organizations. It examines how node-, rack-, and pod-scale scale-up interconnects support collective communication, and it traces architectural evolution across accelerator generations, showing how increases in arithmetic throughput are accompanied by changes in data delivery, execution coordination, communication, and deployment infrastructure. Together, these analyses highlight key challenges in future AI datacenter design, from workload flexibility, data movement, and communication efficiency to power delivery, cooling, and rapid model evolution, and they show how the trade-off between generality and specialization extends from individual accelerators to datacenter-scale systems. The chart below is an interactive version of the survey's scaling figure: frontier-model parameter counts against per-accelerator dense FP16/BF16 compute, DRAM bandwidth and capacity, and scale-up interconnect bandwidth, extended with accelerator generations documented in the survey's open research corpus.</p>
+</section>
+
+<section id="scaling">
+  <h2>Model scaling versus accelerator scaling</h2>
+  <p class="muted">Each series is normalized to its first observation in the survey's Figure 2 and plotted on a log scale. Legend percentages are endpoint annualized growth rates over the points currently shown. Hover a point for its value and source; click it for details. Scroll or drag to zoom, and use the filters to choose metrics, vendors, product status, and data sets.</p>
+
+  <div class="filters" id="filters">
+    <details data-group="metrics"><summary>Metric <span class="count"></span></summary><div class="menu"></div></details>
+    <details data-group="vendors"><summary>Vendor <span class="count"></span></summary><div class="menu"></div></details>
+    <details data-group="statuses"><summary>Status <span class="count"></span></summary><div class="menu"></div></details>
+    <details data-group="datasets"><summary>Data set <span class="count"></span></summary><div class="menu"></div></details>
+    <span class="spacer"></span>
+    <label class="toggle"><input type="checkbox" id="labels-toggle"> Show point labels</label>
+    <button class="btn small" id="reset-btn" type="button">Reset</button>
+  </div>
+
+  <div class="chart-card">
+    <div id="chart" role="img" aria-label="Scatter chart of normalized model size and accelerator metrics versus release date"></div>
+    <div class="chart-foot">
+      <span class="hint" id="visible-count"></span>
+      <span>Hollow markers: preliminary or forthcoming products.</span>
+    </div>
+  </div>
+
+  <div class="detail empty" id="detail">Click a point to see the product, its recorded metrics, notes, and sources.</div>
+
+</section>
+
+<section id="method" class="method">
+  <h2>Methodology</h2>
+  <ul>
+    <li><strong>Dense FP16/BF16 compute</strong> is the vendor-stated peak dense matrix (tensor-engine) throughput per accelerator, counting a fused multiply-add as two operations. No sparse or lower-precision figure is converted into an FP16 equivalent; products that disclose only FP8 or INT8 peaks contribute no compute point.</li>
+    <li><strong>DRAM bandwidth and capacity</strong> are per accelerator (chip or package as sold). HBM is the norm; GDDR, LPDDR, and DDR products are noted as such. SRAM-only designs contribute no DRAM point. Wafer-scale engines are left out of the compute series because a wafer is not comparable to a single package.</li>
+    <li><strong>Scale-up interconnect bandwidth</strong> is the aggregate bidirectional chip-to-chip bandwidth per accelerator as reported by the vendor. Unidirectional or Tbps figures are converted, and each conversion is recorded in the point's note.</li>
+    <li><strong>Model size</strong> is the total parameter count, including all mixture-of-experts parameters rather than active parameters.</li>
+    <li><strong>Normalization</strong> divides each value by a fixed baseline: the first observation of that series in the survey's Figure 2 (GPT for model size; TPU v2 for compute, DRAM bandwidth, and capacity; NVLink 2 for interconnect). Baselines do not change with the filters, so the "Survey Figure 2" data set reproduces the published figure and its growth rates.</li>
+    <li><strong>Growth rates</strong> in the legend follow the figure's method: the annualized rate between the earliest visible observation and the last record-setting observation of that series.</li>
+  </ul>
+</section>
+
+<section id="data">
+  <details class="expander">
+    <summary>Show the visible points as a table</summary>
+    <div class="table-scroll"><table id="data-table"></table></div>
+  </details>
+  <details class="expander" id="references">
+    <summary>Show the reference list <span class="muted" id="refs-count"></span></summary>
+    <p class="muted">Sources are numbered in order of first use. Entries used by the points currently shown are highlighted; the rest are dimmed.</p>
+    <ol class="refs" id="refs"></ol>
+  </details>
+</section>
+
+<footer>
+  <p>Chart built with <a href="https://echarts.apache.org/" target="_blank" rel="noopener">Apache ECharts</a>. Data and figures &copy; the authors; vendor figures belong to their respective owners.</p>
+</footer>
+
+</div>
+<script>
+  // Set to the public PDF URL once the paper is available; the button stays hidden while empty.
+  window.PAPER_URL = "";
+</script>
+<script src="js/chart.js"></script>
+</body>
+</html>
