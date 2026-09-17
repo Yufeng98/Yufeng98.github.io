@@ -21,11 +21,11 @@
       <description>A tutorial spanning the AI system stack from the bottom up: microarchitecture, kernels, compilers, architecture, systems, and algorithms.</description>
     </item>
     <item>
-      <title>Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture</title>
+      <title>AI Model Size vs Hardware Scaling</title>
       <link>https://yufeng98.github.io/public/blogs/ai-datacenter-survey/</link>
       <pubDate>Mon, 14 Sep 2026 08:37:58 +0800</pubDate>
       <guid>https://yufeng98.github.io/public/blogs/ai-datacenter-survey/</guid>
-      <description>A survey of industrial AI accelerators across four architectural categories, with an interactive version of the scaling figure: frontier-model parameter counts against per-accelerator dense FP16/BF16 compute, DRAM bandwidth and capacity, and scale-up interconnect bandwidth.</description>
+      <description>An interactive chart of frontier-model parameter counts against per-accelerator dense FP16/BF16 compute, DRAM bandwidth and capacity, and scale-up interconnect bandwidth, drawn from a survey of industrial AI accelerators.</description>
     </item>
     <item>
       <title>Modern Quantization Methods in LLM</title>
@@ -35,7 +35,7 @@
       <description>&lt;p&gt;Transformer-based LLMs have revolutionized AI, but deploying them is expensive on two fronts: parameter counts of 10–1000B with context lengths of 128K–1M demand enormous memory capacity, and autoregressive decoding emits one token at a time while re-reading the model weights, which strains memory bandwidth. Quantization attacks both at once, by reducing the number of bits each value takes. This post covers what to quantize, when to quantize, and the methods used in practice.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Common Tool Tutorial</title>
+      <title>Git, Tmux, Vim Tutorial</title>
       <link>https://yufeng98.github.io/public/blogs/tool-tutorial/</link>
       <pubDate>Wed, 03 Jun 2020 08:37:58 +0800</pubDate>
       <guid>https://yufeng98.github.io/public/blogs/tool-tutorial/</guid>
