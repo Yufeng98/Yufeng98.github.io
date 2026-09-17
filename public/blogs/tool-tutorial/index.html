@@ -55,7 +55,20 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://yufeng98.github.io/public/blogs/tool-tutorial/">
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$',  right: '$$',  display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$',   right: '$',   display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ],
+    throwOnError: false
+  });"></script>
+<meta property="og:url" content="https://yufeng98.github.io/public/blogs/tool-tutorial/">
   <meta property="og:site_name" content="Yufeng Gu">
   <meta property="og:title" content="Git, Tmux, Vim Tutorial">
   <meta property="og:description" content="This tutorial introduces three commonly used developer tools: Git, Tmux and Vim, as well as Hugo, the engine used to deploy this blog. Git handles version control and collaboration with branching and merging. Tmux keeps long-running terminal sessions alive and lets you split your screen into panes. Vim is a powerful modal editor for fast navigation and editing. Hugo is a static site generator for building and deploying websites quickly. Each section below briefly explains what the tool does, why it’s useful, and gives concise descriptions of the components you’ll use most.">
