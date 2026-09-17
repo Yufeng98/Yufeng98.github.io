@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>1.15 Evolution of Matrix-Engine Datapaths and Control Granularity · Microarchitecture</title>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="../assets/site.css" />
+<script>window.SITE_ROOT="../";</script>
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
+  <nav class="tabs"><a class="tab tab--active" href="../microarchitecture/index.html"><span class="tab-n">1</span>Microarchitecture</a><a class="tab" href="../kernel/index.html"><span class="tab-n">2</span>Kernel</a><a class="tab" href="../compiler/index.html"><span class="tab-n">3</span>Compiler</a><a class="tab" href="../architecture/index.html"><span class="tab-n">4</span>Architecture</a><a class="tab" href="../system/index.html"><span class="tab-n">5</span>System</a><a class="tab" href="../algorithms/index.html"><span class="tab-n">6</span>Algorithms</a></nav>
+  <div class="search">
+    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
+           aria-label="Search the outline" />
+    <div class="search-results" id="search-results" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+</header>
+<div class="layout layout--section">
+<aside class="sidebar" id="sidebar">
+  <div class="sb-head">Microarchitecture</div>
+  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="1-1.html"><span class="sb-n">1.1</span><span class="sb-t">From GEMM to AI Accelerators</span></a></li><li><a class="sb-link" href="1-2.html"><span class="sb-n">1.2</span><span class="sb-t">Numerical Representation, Arithmetic Circuits, and Precision Contracts</span></a></li><li><a class="sb-link" href="1-3.html"><span class="sb-n">1.3</span><span class="sb-t">Execution Organization: SIMT, Heterogeneous Engines, and Spatial Execution</span></a></li><li><a class="sb-link" href="1-4.html"><span class="sb-n">1.4</span><span class="sb-t">Processing Elements and Matrix Compute Units</span></a></li><li><a class="sb-link" href="1-5.html"><span class="sb-n">1.5</span><span class="sb-t">Systolic Array Design</span></a></li><li><a class="sb-link" href="1-6.html"><span class="sb-n">1.6</span><span class="sb-t">Dataflow and Data Reuse</span></a></li><li><a class="sb-link" href="1-7.html"><span class="sb-n">1.7</span><span class="sb-t">TPU v1 Case Study: From Systolic Array to GEMM Execution</span></a></li><li><a class="sb-link" href="1-8.html"><span class="sb-n">1.8</span><span class="sb-t">Registers and On-Chip Local State</span></a></li><li><a class="sb-link" href="1-9.html"><span class="sb-n">1.9</span><span class="sb-t">On-Chip SRAM Management: Cache, Scratchpad, and Dedicated Buffers</span></a></li><li><a class="sb-link" href="1-10.html"><span class="sb-n">1.10</span><span class="sb-t">DRAM and External Memory Interfaces</span></a></li><li><a class="sb-link" href="1-11.html"><span class="sb-n">1.11</span><span class="sb-t">Data Movement and Asynchronous Execution</span></a></li><li><a class="sb-link" href="1-12.html"><span class="sb-n">1.12</span><span class="sb-t">On-Chip Interconnect and Synchronization</span></a></li><li><a class="sb-link" href="1-13.html"><span class="sb-n">1.13</span><span class="sb-t">Roofline and Performance Upper Bounds</span></a></li><li><a class="sb-link" href="1-14.html"><span class="sb-n">1.14</span><span class="sb-t">Hierarchical GEMM Mapping and Tiling</span></a></li><li><a class="sb-link sb-link--active" href="1-15.html"><span class="sb-n">1.15</span><span class="sb-t">Evolution of Matrix-Engine Datapaths and Control Granularity</span></a></li><li><a class="sb-link" href="1-16.html"><span class="sb-n">1.16</span><span class="sb-t">Non-GEMM Operators and Dedicated Support</span></a></li><li><a class="sb-link" href="1-17.html"><span class="sb-n">1.17</span><span class="sb-t">Hardware Modeling, Implementation, and Verification</span></a></li></ul>
+</aside>
+<main class="content">
+<nav class="crumbs"><a href="index.html">Microarchitecture</a><span class="sep">/</span><span>§1.15</span></nav>
+<h1>Evolution of Matrix-Engine Datapaths and Control Granularity</h1>
+<div class="sources"><span class="sources-k">Sources</span>Survey §5.2, Figs. 13–14; <a class="ext" href="https://github.com/Yufeng98/AI-datacenter/blob/c49a55c6cdbbf387ca8d42bce1fac224f60d5588/chips/nvidia-gpu/layer-table.md" target="_blank" rel="noopener">NVIDIA layer mapping</a>.</div>
+<div class="subs"><h2 class="sub" id="s1-15-1"><span class="sub-n">1.15.1</span><span class="sub-t">Volta: Warp-Cooperative Programming Interface and Sub-Warp Machine Execution</span><a class="hash" href="#s1-15-1" aria-label="Link to Volta: Warp-Cooperative Programming Interface and Sub-Warp Machine Execution">#</a></h2><h2 class="sub" id="s1-15-2"><span class="sub-n">1.15.2</span><span class="sub-t">Turing: Warp-Level MMA, ldmatrix, and Operand Layout</span><a class="hash" href="#s1-15-2" aria-label="Link to Turing: Warp-Level MMA, ldmatrix, and Operand Layout">#</a></h2><h2 class="sub" id="s1-15-3"><span class="sub-n">1.15.3</span><span class="sub-t">Ampere: cp.async and Global-to-Shared Data Movement</span><a class="hash" href="#s1-15-3" aria-label="Link to Ampere: cp.async and Global-to-Shared Data Movement">#</a></h2><h2 class="sub" id="s1-15-4"><span class="sub-n">1.15.4</span><span class="sub-t">Hopper: WGMMA, TMA, and Distributed Shared Memory</span><a class="hash" href="#s1-15-4" aria-label="Link to Hopper: WGMMA, TMA, and Distributed Shared Memory">#</a></h2><h2 class="sub" id="s1-15-5"><span class="sub-n">1.15.5</span><span class="sub-t">Blackwell: Tensor Memory and Paired-SM Tensor Execution</span><a class="hash" href="#s1-15-5" aria-label="Link to Blackwell: Tensor Memory and Paired-SM Tensor Execution">#</a></h2><h2 class="sub" id="s1-15-6"><span class="sub-n">1.15.6</span><span class="sub-t">Independent Evolution of Operand Movement, Compute Issue, and Result Residency</span><a class="hash" href="#s1-15-6" aria-label="Link to Independent Evolution of Operand Movement, Compute Issue, and Result Residency">#</a></h2><h2 class="sub" id="s1-15-7"><span class="sub-n">1.15.7</span><span class="sub-t">Boundaries Among Hardware Capability, ISA Exposure, and Kernel Programming Abstractions</span><a class="hash" href="#s1-15-7" aria-label="Link to Boundaries Among Hardware Capability, ISA Exposure, and Kernel Programming Abstractions">#</a></h2></div>
+<nav class="prevnext"><a class="pn pn--prev" href="1-14.html"><span class="pn-k">← Previous</span><span class="pn-t">1.14 Hierarchical GEMM Mapping and Tiling</span></a><a class="pn pn--next" href="1-16.html"><span class="pn-k">→ Next</span><span class="pn-t">1.16 Non-GEMM Operators and Dedicated Support</span></a></nav>
+</main>
+<aside class="toc" id="toc">
+  <div class="toc-head">On this page</div>
+  <ul class="toc-list"><li><a href="#s1-15-1" data-toc="s1-15-1"><span class="toc-n">1.15.1</span>Volta: Warp-Cooperative Programming Interface and Sub-Warp Machine Execution</a></li><li><a href="#s1-15-2" data-toc="s1-15-2"><span class="toc-n">1.15.2</span>Turing: Warp-Level MMA, ldmatrix, and Operand Layout</a></li><li><a href="#s1-15-3" data-toc="s1-15-3"><span class="toc-n">1.15.3</span>Ampere: cp.async and Global-to-Shared Data Movement</a></li><li><a href="#s1-15-4" data-toc="s1-15-4"><span class="toc-n">1.15.4</span>Hopper: WGMMA, TMA, and Distributed Shared Memory</a></li><li><a href="#s1-15-5" data-toc="s1-15-5"><span class="toc-n">1.15.5</span>Blackwell: Tensor Memory and Paired-SM Tensor Execution</a></li><li><a href="#s1-15-6" data-toc="s1-15-6"><span class="toc-n">1.15.6</span>Independent Evolution of Operand Movement, Compute Issue, and Result Residency</a></li><li><a href="#s1-15-7" data-toc="s1-15-7"><span class="toc-n">1.15.7</span>Boundaries Among Hardware Capability, ISA Exposure, and Kernel Programming Abstractions</a></li></ul>
+</aside>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
