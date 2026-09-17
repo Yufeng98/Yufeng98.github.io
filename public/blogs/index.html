@@ -10,7 +10,7 @@
 <meta name="description" content="Blogs - Yufeng Gu">
 <meta name="author" content="Yufeng Gu">
 <link rel="canonical" href="https://yufeng98.github.io/public/blogs/">
-<link crossorigin="anonymous" href="/public/assets/css/stylesheet.c9d7fadd5095a9d38bde9bc3a94ab93e3242791a68d89b5047a2a1893c3f48c7.css" integrity="sha256-ydf63VCVqdOL3pvDqUq5PjJCeRpo2JtQR6KhiTw/SMc=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/public/assets/css/stylesheet.cf9630a790374ff76ed8b1ecdb79156f97eafed5e3a6835db6992ad634377bbe.css" integrity="sha256-z5Ywp5A3T/du2LHs23kVb5fq/tXjpoNdtpkq1jQ3e74=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://yufeng98.github.io/public/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://yufeng98.github.io/public/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://yufeng98.github.io/public/favicon-32x32.png">
@@ -160,60 +160,57 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Git Tutorial
+    <h2 class="entry-hint-parent">AI Architecture and Systems Tutorial
     </h2>
   </header>
   <div class="entry-content">
-    <p>Basic instructions git [command] [--flags] [arguments] git status [-s] git log [--oneline] [-${num of line}] git clone &lt;remote_url&gt; [localprojectname] git remote add &lt;name&gt; &lt;remote_url&gt; git push [-u] [&lt;remote&gt;] [&lt;branch&gt;] git show HEAD~(parent) ~2(parent of parent) ^(first parent) ^2(second parent) git tag &lt;tagname&gt; [&lt;commit&gt;] git push &lt;remote&gt; &lt;tagname&gt; git checkout -b &lt;branch&gt; git branch --all git branch -d &lt;branch&gt; git merge --no-ff &lt;branch&gt; git commit --amend --no-edit Create and make an initial push mkdir machine_1 cd machine_1 git init # initialize git in current directory git status # show changes of the Working Tree # Create hello.py git add . # update changes in the Staging Area/Index git commit -m &#34;Hello World!&#34; # update changes in the Commit Tree git remote add origin https://github.com/Yufeng98/git_tutorial.git git push origin master See details in git_tutorial repositary.
+    <p>A tutorial spanning the AI system stack from the bottom up: microarchitecture, kernels, compilers, architecture, systems, and algorithms.</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-09-16 08:37:58 +0800 +0800'>September 16, 2026</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Yufeng Gu</footer>
+  <a class="entry-link" aria-label="post link to AI Architecture and Systems Tutorial" href="https://yufeng98.github.io/public/blogs/ai-architecture-system/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A survey of industrial AI accelerators across four architectural categories, with an interactive version of the scaling figure: frontier-model parameter counts against per-accelerator dense FP16/BF16 compute, DRAM bandwidth and capacity, and scale-up interconnect bandwidth.</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-09-14 08:37:58 +0800 +0800'>September 14, 2026</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Yufeng Gu</footer>
+  <a class="entry-link" aria-label="post link to Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture" href="https://yufeng98.github.io/public/blogs/ai-datacenter-survey/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Modern Quantization Methods in LLM
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Transformer-based LLMs have revolutionized AI, but deploying them is expensive on two fronts: parameter counts of 10–1000B with context lengths of 128K–1M demand enormous memory capacity, and autoregressive decoding emits one token at a time while re-reading the model weights, which strains memory bandwidth. Quantization attacks both at once, by reducing the number of bits each value takes. This post covers what to quantize, when to quantize, and the methods used in practice.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-08-17 08:37:58 +0800 +0800'>August 17, 2020</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Yufeng Gu</footer>
-  <a class="entry-link" aria-label="post link to Git Tutorial" href="https://yufeng98.github.io/public/blogs/git-tutorial/"></a>
+  <footer class="entry-footer"><span title='2025-08-03 08:37:58 +0800 +0800'>August 3, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Yufeng Gu</footer>
+  <a class="entry-link" aria-label="post link to Modern Quantization Methods in LLM" href="https://yufeng98.github.io/public/blogs/modern-quantization-methods-in-llm/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Tmux Tutorial
+    <h2 class="entry-hint-parent">Common Tool Tutorial
     </h2>
   </header>
   <div class="entry-content">
-    <p>Commands Session Management tmux [new -s &lt;session-name&gt; -m &lt;window-name&gt;] tmux detach tmux a[ttach] -t &lt;session-name&gt; tmux switch -t tmux ls tmux kill-session -t &lt;session-name&gt; tmux kill-server # kill all sessions Prefix Commands Ctrl&#43;b Session :new&lt;Enter&gt; create a new session s list all sessions $ rename current session d detach current session Window c create a new window w list all windows , rename current window &amp; close current window Pane % splite the pane vertically &#34; splite the pane horizontally x close current pane Configuration git clone https://github.com/Yufeng98/.tmux.git cp .tmux/.tmux.conf . cp .tmux/.tmux.conf.local . </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-06-05 08:37:58 +0800 +0800'>June 5, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Yufeng Gu</footer>
-  <a class="entry-link" aria-label="post link to Tmux Tutorial" href="https://yufeng98.github.io/public/blogs/tmux-tutorial/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Vim Tutorial
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Normal Mode - Navigate the structure of the file Move Cursor h/j/k/l - Move left/up/down/right H/M/L - Move to the top/middle/bottom of the window w/e - Move to the beginning/end of the next word b - Move to the beggining of the previous word 0/$ - Move to the beginning/end of a line (/) - Move to the beggining of the next/previous line {/} - Move to the beginning of the next/previous paragraph ^E/^Y - Scroll the window down/up ^F/^B - Scroll down/up one page gg/G - Go to top/bottom of the file Copy/Paste/Delete y - Copy p - Paste yy/yw/y$ - Copy a line/word/from the cursor to the end of the file #yy - Copy # lines x - Delete a single character d/dd/dw - Delete highlight text/a line/a word D/d0 - Delete from the cursor to the beginning/end of the line dgg/dG - Delete from the cursor to the beginning/end of the file Actions u/u# - Undo the last/last # actions . - Repeate the last action Options a - all i - in t - till f - find forward F - find backard Conbined Commands diw - Delete inside the word caw - Change all the word di) - Delete inside the parentheses dt; - Delete until the semicolon Insert Mode - Edit the file i - enter insert mode Visual Mode - Highlight portions of the file to manipulate v - enter visual mode Ex Mode - Command mode :q - exit :w - save :q! - force to exit </p>
-  </div>
-  <footer class="entry-footer"><span title='2020-06-03 08:37:58 +0800 +0800'>June 3, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Yufeng Gu</footer>
-  <a class="entry-link" aria-label="post link to Vim Tutorial" href="https://yufeng98.github.io/public/blogs/vim-tutorial/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Hugo Tutorial
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Download Hugo Follow instructions on Hugo.
-Verify Hugo hugo version Create a new site hugo new site mypage Download a theme cd mypage git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke Try template We can find an example in exampleSite, where static stores images and content stores markdown files.
-cp -r ./themes/hugo-coder/exampleSite/* ./ Deploy page on local server hugo server -D See it with localhost:1313 on your browser.
-Deploy page on GitHub Build a repository named ${username}.github.io and build static page configuration. Follow instructions here.
+    <p>This tutorial introduces three commonly used developer tools: Git, Tmux and Vim, as well as Hugo, the engine used to deploy this blog. Git handles version control and collaboration with branching and merging. Tmux keeps long-running terminal sessions alive and lets you split your screen into panes. Vim is a powerful modal editor for fast navigation and editing. Hugo is a static site generator for building and deploying websites quickly. Each section below briefly explains what the tool does, why it’s useful, and gives concise descriptions of the components you’ll use most.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-06-01 08:37:58 +0800 +0800'>June 1, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Yufeng Gu</footer>
-  <a class="entry-link" aria-label="post link to Hugo Tutorial" href="https://yufeng98.github.io/public/blogs/hugo-tutorial/"></a>
+  <footer class="entry-footer"><span title='2020-06-03 08:37:58 +0800 +0800'>June 3, 2020</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Yufeng Gu</footer>
+  <a class="entry-link" aria-label="post link to Common Tool Tutorial" href="https://yufeng98.github.io/public/blogs/tool-tutorial/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://yufeng98.github.io/public/">Yufeng Gu</a></span> · 
+        <span>&copy; 2026 <a href="https://yufeng98.github.io/public/">Yufeng Gu</a></span> · 
 
     <span>
         Powered by
