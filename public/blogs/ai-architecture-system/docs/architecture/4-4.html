@@ -2,48 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>4.4 GPU: General-Purpose Parallel Execution and Specialized Matrix Computation · Architecture</title>
-<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<link rel="stylesheet" href="../assets/site.css" />
-<script>window.SITE_ROOT="../";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=accelerator-taxonomy.html#s4-2-2" />
+<link rel="canonical" href="accelerator-taxonomy.html#s4-2-2" />
+<title>Page moved</title>
 </head>
 <body>
-<header class="topbar">
-  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
-  <nav class="tabs"><a class="tab" href="../microarchitecture/index.html">Microarchitecture</a><a class="tab" href="../kernel/index.html">Kernel</a><a class="tab" href="../compiler/index.html">Compiler</a><a class="tab tab--active" href="../architecture/index.html">Architecture</a><a class="tab" href="../system/index.html">System</a><a class="tab" href="../algorithms/index.html">Algorithms</a></nav>
-  <div class="search">
-    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
-           aria-label="Search the outline" />
-    <div class="search-results" id="search-results" hidden></div>
-  </div>
-  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-  </button>
-</header>
-<div class="layout layout--section">
-<aside class="sidebar" id="sidebar">
-  <div class="sb-head">Architecture</div>
-  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="4-2.html"><span class="sb-n">4.2</span><span class="sb-t">AI Datacenter Context and Four Categories of Resource Pressure</span></a></li><li><a class="sb-link" href="4-3.html"><span class="sb-n">4.3</span><span class="sb-t">Core Taxonomy: Four Classes of AI Accelerator Architecture</span></a></li><li><a class="sb-link sb-link--active" href="4-4.html"><span class="sb-n">4.4</span><span class="sb-t">GPU: General-Purpose Parallel Execution and Specialized Matrix Computation</span></a></li><li><a class="sb-link" href="4-5.html"><span class="sb-n">4.5</span><span class="sb-t">NPU: Heterogeneous Compute Engines and Shared Local Memory</span></a></li><li><a class="sb-link" href="4-6.html"><span class="sb-n">4.6</span><span class="sb-t">Spatial Dataflow I: PE Arrays and Distributed Local Memory</span></a></li><li><a class="sb-link" href="4-7.html"><span class="sb-n">4.7</span><span class="sb-t">Spatial Dataflow II: Reconfigurable Architectures</span></a></li><li><a class="sb-link" href="4-8.html"><span class="sb-n">4.8</span><span class="sb-t">Spatial Dataflow III: Functional-Slice Streaming</span></a></li><li><a class="sb-link" href="4-9.html"><span class="sb-n">4.9</span><span class="sb-t">Compute-in-Memory: SRAM, DRAM, and the Location of Computation</span></a></li><li><a class="sb-link" href="4-10.html"><span class="sb-n">4.10</span><span class="sb-t">Compute Engines: Cross-Category Organization and Trade-offs</span></a></li><li><a class="sb-link" href="4-11.html"><span class="sb-n">4.11</span><span class="sb-t">Memory Hierarchy: From Hardware Cache to Software Scratchpad</span></a></li><li><a class="sb-link" href="4-15.html"><span class="sb-n">4.15</span><span class="sb-t">Physical Deployment Hierarchy and Scale-Up/Scale-Out Domains</span></a></li><li><a class="sb-link" href="4-16.html"><span class="sb-n">4.16</span><span class="sb-t">Node-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-17.html"><span class="sb-n">4.17</span><span class="sb-t">Rack-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-18.html"><span class="sb-n">4.18</span><span class="sb-t">Pod-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-20.html"><span class="sb-n">4.20</span><span class="sb-t">Topology Performance: Connectivity Is Not Effective Communication Performance</span></a></li><li><a class="sb-link" href="4-21.html"><span class="sb-n">4.21</span><span class="sb-t">Collective Semantics: Endpoint Data Transformation</span></a></li><li><a class="sb-link" href="4-22.html"><span class="sb-n">4.22</span><span class="sb-t">Collective Algorithms: Logical Communication Scheduling</span></a></li><li><a class="sb-link" href="4-23.html"><span class="sb-n">4.23</span><span class="sb-t">Collective–Topology Mapping and Communication Offload</span></a></li><li><a class="sb-link" href="4-24.html"><span class="sb-n">4.24</span><span class="sb-t">GPU Generational Evolution: Compute, Data Supply, and Cooperation Scope</span></a></li><li><a class="sb-link" href="4-26.html"><span class="sb-n">4.26</span><span class="sb-t">Cross-Generation Comparison: Numerical Formats, Structured Sparsity, and Peak Conventions</span></a></li><li><a class="sb-link" href="4-27.html"><span class="sb-n">4.27</span><span class="sb-t">Cross-Generation Comparison: Memory Hierarchy and Scale-Up Fabric</span></a></li><li><a class="sb-link" href="4-28.html"><span class="sb-n">4.28</span><span class="sb-t">Power Delivery, Cooling, and Practically Operable Capacity</span></a></li><li><a class="sb-link" href="4-29.html"><span class="sb-n">4.29</span><span class="sb-t">Future Design Challenges: Generality versus Specialization</span></a></li></ul>
-</aside>
-<main class="content">
-<nav class="crumbs"><a href="index.html">Architecture</a><span class="sep">/</span><span>§4.4</span></nav>
-<h1>GPU: General-Purpose Parallel Execution and Specialized Matrix Computation</h1>
-<div class="sources"><span class="sources-k">Sources</span>Survey §3 and §3.1; additional GPU records are extensions, not additional survey case studies.</div>
-<div class="sec-body"><p>GPUs keep the <strong>SIMT</strong> (single-instruction, multiple-thread) execution model that made them broadly programmable, and add tensor or matrix cores for the dense linear algebra that dominates modern AI <sup class="cite">[<a href="#ref-1">1</a>, <a href="#ref-2">2</a>, <a href="#ref-3">3</a>, <a href="#ref-4">4</a>, <a href="#ref-5">5</a>]</sup>. That combination is the category's defining trait: nothing is given up in generality, and specialized throughput is layered on top.</p><p>Both NVIDIA and AMD use HBM to supply their high-throughput compute units. Scale-up topology, though, is a property of the <em>platform</em> rather than the chip: NVIDIA systems have used several different NVLink organizations across generations, including both direct-connect and switched fabrics <sup class="cite">[<a href="#ref-6">6</a>]</sup>, and AMD deployments range from directly connected GPU baseboards to the switched UALoE fabric of the MI455X-based Helios rack. This is why topology is always reported together with a system configuration rather than a part number.</p><p>Programmability, high-bandwidth memory and fast scale-up communication together are what let GPUs serve as the general-purpose substrate of large AI datacenters.</p></div>
-<div class="subs"></div>
-<section class="refs"><h2 class="refs-h">References</h2><ol class="ref-list"><li class="ref" id="ref-1"><span class="ref-n">1.</span><span class="ref-t">Jack Choquette. Nvidia hopper h100 gpu: Scaling performance. IEEE Micro, 2023.</span></li><li class="ref" id="ref-2"><span class="ref-n">2.</span><span class="ref-t">NVIDIA. <a class="ext" href="https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/" target="_blank" rel="noopener">NVIDIA Vera Rubin NVL72 Specifications</a>. 2026. Individual Rubin GPU specifications are preliminary and subject to change.</span></li><li class="ref" id="ref-3"><span class="ref-n">3.</span><span class="ref-t">Alan Smith and Vamsi Krishna Alla. AMD Instinct™ MI300X: A Generative AI Accelerator and Platform Architecture. IEEE Micro, 2025.</span></li><li class="ref" id="ref-4"><span class="ref-n">4.</span><span class="ref-t">AMD. <a class="ext" href="https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html" target="_blank" rel="noopener">AMD Instinct MI455X GPUs</a>. 2026.</span></li><li class="ref" id="ref-5"><span class="ref-n">5.</span><span class="ref-t">AMD. <a class="ext" href="https://www.amd.com/en/technologies/cdna.html" target="_blank" rel="noopener">AMD CDNA 5 Architecture</a>. 2026.</span></li><li class="ref" id="ref-6"><span class="ref-n">6.</span><span class="ref-t">William Tsu. <a class="ext" href="https://developer.nvidia.com/blog/hgx-2-fuses-ai-computing/" target="_blank" rel="noopener">HGX-2 Fuses HPC and AI Computing Architectures</a>. 2018.</span></li></ol></section>
-<nav class="prevnext"><a class="pn pn--prev" href="4-3.html"><span class="pn-k">← Previous</span><span class="pn-t">4.3 Core Taxonomy: Four Classes of AI Accelerator Architecture</span></a><a class="pn pn--next" href="4-5.html"><span class="pn-k">→ Next</span><span class="pn-t">4.5 NPU: Heterogeneous Compute Engines and Shared Local Memory</span></a></nav>
-</main>
-<aside class="toc" id="toc">
-  <div class="toc-head">On this page</div>
-  <ul class="toc-list"></ul>
-</aside>
-</div>
-<div class="scrim" id="scrim" hidden></div>
-<script src="../assets/site.js" defer></script>
+<p>This page moved to <a href="accelerator-taxonomy.html#s4-2-2">accelerator-taxonomy.html#s4-2-2</a>.</p>
+<script>(function(){var target="accelerator-taxonomy.html",map={},fallback="s4-2-2";var old=location.hash.slice(1),next=map[old]||fallback;location.replace(target+(next?'#'+next:''));})();</script>
 </body>
 </html>

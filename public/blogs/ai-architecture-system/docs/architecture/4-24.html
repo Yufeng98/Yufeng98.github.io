@@ -2,48 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>4.24 GPU Generational Evolution: Compute, Data Supply, and Cooperation Scope · Architecture</title>
-<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<link rel="stylesheet" href="../assets/site.css" />
-<script>window.SITE_ROOT="../";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=generational-evolution.html#s4-7-1" />
+<link rel="canonical" href="generational-evolution.html#s4-7-1" />
+<title>Page moved</title>
 </head>
 <body>
-<header class="topbar">
-  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
-  <nav class="tabs"><a class="tab" href="../microarchitecture/index.html">Microarchitecture</a><a class="tab" href="../kernel/index.html">Kernel</a><a class="tab" href="../compiler/index.html">Compiler</a><a class="tab tab--active" href="../architecture/index.html">Architecture</a><a class="tab" href="../system/index.html">System</a><a class="tab" href="../algorithms/index.html">Algorithms</a></nav>
-  <div class="search">
-    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
-           aria-label="Search the outline" />
-    <div class="search-results" id="search-results" hidden></div>
-  </div>
-  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-  </button>
-</header>
-<div class="layout layout--section">
-<aside class="sidebar" id="sidebar">
-  <div class="sb-head">Architecture</div>
-  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="4-2.html"><span class="sb-n">4.2</span><span class="sb-t">AI Datacenter Context and Four Categories of Resource Pressure</span></a></li><li><a class="sb-link" href="4-3.html"><span class="sb-n">4.3</span><span class="sb-t">Core Taxonomy: Four Classes of AI Accelerator Architecture</span></a></li><li><a class="sb-link" href="4-4.html"><span class="sb-n">4.4</span><span class="sb-t">GPU: General-Purpose Parallel Execution and Specialized Matrix Computation</span></a></li><li><a class="sb-link" href="4-5.html"><span class="sb-n">4.5</span><span class="sb-t">NPU: Heterogeneous Compute Engines and Shared Local Memory</span></a></li><li><a class="sb-link" href="4-6.html"><span class="sb-n">4.6</span><span class="sb-t">Spatial Dataflow I: PE Arrays and Distributed Local Memory</span></a></li><li><a class="sb-link" href="4-7.html"><span class="sb-n">4.7</span><span class="sb-t">Spatial Dataflow II: Reconfigurable Architectures</span></a></li><li><a class="sb-link" href="4-8.html"><span class="sb-n">4.8</span><span class="sb-t">Spatial Dataflow III: Functional-Slice Streaming</span></a></li><li><a class="sb-link" href="4-9.html"><span class="sb-n">4.9</span><span class="sb-t">Compute-in-Memory: SRAM, DRAM, and the Location of Computation</span></a></li><li><a class="sb-link" href="4-10.html"><span class="sb-n">4.10</span><span class="sb-t">Compute Engines: Cross-Category Organization and Trade-offs</span></a></li><li><a class="sb-link" href="4-11.html"><span class="sb-n">4.11</span><span class="sb-t">Memory Hierarchy: From Hardware Cache to Software Scratchpad</span></a></li><li><a class="sb-link" href="4-15.html"><span class="sb-n">4.15</span><span class="sb-t">Physical Deployment Hierarchy and Scale-Up/Scale-Out Domains</span></a></li><li><a class="sb-link" href="4-16.html"><span class="sb-n">4.16</span><span class="sb-t">Node-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-17.html"><span class="sb-n">4.17</span><span class="sb-t">Rack-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-18.html"><span class="sb-n">4.18</span><span class="sb-t">Pod-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-20.html"><span class="sb-n">4.20</span><span class="sb-t">Topology Performance: Connectivity Is Not Effective Communication Performance</span></a></li><li><a class="sb-link" href="4-21.html"><span class="sb-n">4.21</span><span class="sb-t">Collective Semantics: Endpoint Data Transformation</span></a></li><li><a class="sb-link" href="4-22.html"><span class="sb-n">4.22</span><span class="sb-t">Collective Algorithms: Logical Communication Scheduling</span></a></li><li><a class="sb-link" href="4-23.html"><span class="sb-n">4.23</span><span class="sb-t">Collective–Topology Mapping and Communication Offload</span></a></li><li><a class="sb-link sb-link--active" href="4-24.html"><span class="sb-n">4.24</span><span class="sb-t">GPU Generational Evolution: Compute, Data Supply, and Cooperation Scope</span></a></li><li><a class="sb-link" href="4-26.html"><span class="sb-n">4.26</span><span class="sb-t">Cross-Generation Comparison: Numerical Formats, Structured Sparsity, and Peak Conventions</span></a></li><li><a class="sb-link" href="4-27.html"><span class="sb-n">4.27</span><span class="sb-t">Cross-Generation Comparison: Memory Hierarchy and Scale-Up Fabric</span></a></li><li><a class="sb-link" href="4-28.html"><span class="sb-n">4.28</span><span class="sb-t">Power Delivery, Cooling, and Practically Operable Capacity</span></a></li><li><a class="sb-link" href="4-29.html"><span class="sb-n">4.29</span><span class="sb-t">Future Design Challenges: Generality versus Specialization</span></a></li></ul>
-</aside>
-<main class="content">
-<nav class="crumbs"><a href="index.html">Architecture</a><span class="sep">/</span><span>§4.24</span></nav>
-<h1>GPU Generational Evolution: Compute, Data Supply, and Cooperation Scope</h1>
-<div class="sources"><span class="sources-k">Sources</span>Survey §5, Tables 3–4 and Figs. 11–15; <a class="ext" href="https://github.com/Yufeng98/AI-datacenter/blob/c49a55c6cdbbf387ca8d42bce1fac224f60d5588/chips/nvidia-gpu/summary.md" target="_blank" rel="noopener">NVIDIA</a> and <a class="ext" href="https://github.com/Yufeng98/AI-datacenter/blob/c49a55c6cdbbf387ca8d42bce1fac224f60d5588/chips/amd-gpu/summary.md" target="_blank" rel="noopener">AMD</a> platform records. Preliminary specifications retain that status.</div>
-<div class="sec-body"><p>Tracing one accelerator family across generations separates the features that persist from those that change — a distinction the architectural taxonomy alone cannot make.</p><figure class="fig"><img src="../assets/figures/fp32-fp16-throughput.svg" alt="Per-GPU peak FP32 throughput and dense FP16/BF16 matrix throughput across NVIDIA and AMD GPUs. NVIDIA is drawn with solid lines, AMD with dashed." loading="lazy" /><figcaption>Per-GPU peak FP32 throughput and dense FP16/BF16 matrix throughput across NVIDIA and AMD GPUs. NVIDIA is drawn with solid lines, AMD with dashed.</figcaption></figure><p>The divergence in that figure is the central fact of the last decade of GPU design. General-purpose high-precision SIMD throughput (FP32) has grown slowly and remains below 200 TFLOPS, while low-precision matrix-engine throughput has risen to roughly 2,500 TFLOPS. Each generation's headline gain comes from the matrix engine and from ever-lower precision, not from the general-purpose datapath.</p><p>Raising matrix throughput, though, is only useful if operands arrive fast enough, so the same generations also reworked <strong>data supply</strong> and <strong>cooperation scope</strong>. NVIDIA's Tensor Core evolution includes redesigned operand-delivery mechanisms and tighter coordination among execution units, enabling greater overlap between data movement and computation and supporting larger matrix operations <sup class="cite">[<a href="#ref-1">1</a>, <a href="#ref-2">2</a>]</sup>. Scheduling mechanisms, data-movement support and on-chip SRAM capacity all advanced alongside the arithmetic; the microarchitectural detail of that progression, from Volta through Blackwell, is traced in §1.15.</p></div>
-<div class="subs"></div>
-<section class="refs"><h2 class="refs-h">References</h2><ol class="ref-list"><li class="ref" id="ref-1"><span class="ref-n">1.</span><span class="ref-t">Wei Sun et al. Dissecting tensor cores via microbenchmarks: Latency, throughput and numeric behaviors. IEEE Transactions on Parallel and Distributed Systems, 2022.</span></li><li class="ref" id="ref-2"><span class="ref-n">2.</span><span class="ref-t">Weile Luo et al. Benchmarking and dissecting the nvidia hopper gpu architecture. 2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS), 2024.</span></li></ol></section>
-<nav class="prevnext"><a class="pn pn--prev" href="4-23.html"><span class="pn-k">← Previous</span><span class="pn-t">4.23 Collective–Topology Mapping and Communication Offload</span></a><a class="pn pn--next" href="4-26.html"><span class="pn-k">→ Next</span><span class="pn-t">4.26 Cross-Generation Comparison: Numerical Formats, Structured Sparsity, and Peak Conventions</span></a></nav>
-</main>
-<aside class="toc" id="toc">
-  <div class="toc-head">On this page</div>
-  <ul class="toc-list"></ul>
-</aside>
-</div>
-<div class="scrim" id="scrim" hidden></div>
-<script src="../assets/site.js" defer></script>
+<p>This page moved to <a href="generational-evolution.html#s4-7-1">generational-evolution.html#s4-7-1</a>.</p>
+<script>(function(){var target="generational-evolution.html",map={},fallback="s4-7-1";var old=location.hash.slice(1),next=map[old]||fallback;location.replace(target+(next?'#'+next:''));})();</script>
 </body>
 </html>

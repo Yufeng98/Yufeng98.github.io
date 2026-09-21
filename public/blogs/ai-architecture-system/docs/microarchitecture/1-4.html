@@ -2,47 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>1.4 Processing Elements and Matrix Compute Units · Microarchitecture</title>
-<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<link rel="stylesheet" href="../assets/site.css" />
-<script>window.SITE_ROOT="../";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=execution-and-compute-units.html#s1-3-2" />
+<link rel="canonical" href="execution-and-compute-units.html#s1-3-2" />
+<title>Page moved</title>
 </head>
 <body>
-<header class="topbar">
-  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
-  <nav class="tabs"><a class="tab tab--active" href="../microarchitecture/index.html">Microarchitecture</a><a class="tab" href="../kernel/index.html">Kernel</a><a class="tab" href="../compiler/index.html">Compiler</a><a class="tab" href="../architecture/index.html">Architecture</a><a class="tab" href="../system/index.html">System</a><a class="tab" href="../algorithms/index.html">Algorithms</a></nav>
-  <div class="search">
-    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
-           aria-label="Search the outline" />
-    <div class="search-results" id="search-results" hidden></div>
-  </div>
-  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-  </button>
-</header>
-<div class="layout layout--section">
-<aside class="sidebar" id="sidebar">
-  <div class="sb-head">Microarchitecture</div>
-  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="1-2.html"><span class="sb-n">1.2</span><span class="sb-t">Numerical Representation, Arithmetic Circuits, and Precision Contracts</span></a></li><li><a class="sb-link sb-link--active" href="1-4.html"><span class="sb-n">1.4</span><span class="sb-t">Processing Elements and Matrix Compute Units</span></a></li><li><a class="sb-link" href="1-9.html"><span class="sb-n">1.9</span><span class="sb-t">On-Chip SRAM Management: Cache, Scratchpad, and Dedicated Buffers</span></a></li><li><a class="sb-link" href="1-15.html"><span class="sb-n">1.15</span><span class="sb-t">Evolution of Matrix-Engine Datapaths and Control Granularity</span></a></li></ul>
-</aside>
-<main class="content">
-<nav class="crumbs"><a href="index.html">Microarchitecture</a><span class="sep">/</span><span>§1.4</span></nav>
-<h1>Processing Elements and Matrix Compute Units</h1>
-<div class="sec-body"><p>A processing element (PE) is the smallest unit that does arithmetic: a multiplier, an adder, a little local state, and just enough control to know what to do next. Accelerators differ enormously at the chip level, but nearly all of them are built by replicating a PE thousands of times and then deciding how operands reach it.</p><p>That decision is where the designs diverge. A general-purpose machine hands every PE its operands from a centralized register file or SRAM, which is flexible but expensive: the same value gets read many times over. Systolic arrays take the opposite approach. Activations and weights are injected at the boundary of the array, and interior PEs receive their operands from neighbours and pass partial sums onward. This neighbour-to-neighbour reuse replaces a large fraction of costly memory accesses with short local transfers, which is why systolic arrays are so common in accelerators that are built primarily for matrix multiplication <sup class="cite">[<a href="#ref-1">1</a>]</sup>.</p><p>Not every accelerator has a matrix engine at all. Some rely entirely on SIMD or vector units, betting on memory bandwidth instead of operand reuse. Cerebras takes this route with an SRAM-centric wafer-scale design, which sustains near-peak performance even on the memory-bound BLAS-1 and BLAS-2 operations that fall far short of peak on HBM-based systems <sup class="cite">[<a href="#ref-2">2</a>]</sup>. Processing-in-memory designs from Samsung and SK hynix make a similar bet, placing vector or SIMD units next to DRAM banks to get very high effective bandwidth <sup class="cite">[<a href="#ref-3">3</a>, <a href="#ref-4">4</a>]</sup>.</p></div>
-<div class="subs"></div>
-<section class="refs"><h2 class="refs-h">References</h2><ol class="ref-list"><li class="ref" id="ref-1"><span class="ref-n">1.</span><span class="ref-t">Norm Jouppi et al. Tpu v4: An optically reconfigurable supercomputer for machine learning with hardware support for embeddings. Proceedings of the 50th annual international symposium on computer architecture, 2023.</span></li><li class="ref" id="ref-2"><span class="ref-n">2.</span><span class="ref-t">Sean Lie. Cerebras architecture deep dive: First look inside the hardware/software co-design for deep learning. IEEE Micro, 2023.</span></li><li class="ref" id="ref-3"><span class="ref-n">3.</span><span class="ref-t">Daehan Kwon et al. <a class="ext" href="https://doi.org/10.1109/JSSC.2022.3200718" target="_blank" rel="noopener">A 1ynm 1.25 v 8gb 16gb/s/pin gddr6-based accelerator-in-memory supporting 1tflops mac operation and various activation functions for deep learning application</a>. IEEE Journal of Solid-State Circuits, 2023.</span></li><li class="ref" id="ref-4"><span class="ref-n">4.</span><span class="ref-t">Jin Hyun Kim et al. <a class="ext" href="https://doi.org/10.1109/MM.2022.3164651" target="_blank" rel="noopener">Aquabolt-XL HBM2-PIM, LPDDR5-PIM with in-memory processing, and AXDIMM with acceleration buffer</a>. IEEE Micro, 2022.</span></li></ol></section>
-<nav class="prevnext"><a class="pn pn--prev" href="1-2.html"><span class="pn-k">← Previous</span><span class="pn-t">1.2 Numerical Representation, Arithmetic Circuits, and Precision Contracts</span></a><a class="pn pn--next" href="1-9.html"><span class="pn-k">→ Next</span><span class="pn-t">1.9 On-Chip SRAM Management: Cache, Scratchpad, and Dedicated Buffers</span></a></nav>
-</main>
-<aside class="toc" id="toc">
-  <div class="toc-head">On this page</div>
-  <ul class="toc-list"></ul>
-</aside>
-</div>
-<div class="scrim" id="scrim" hidden></div>
-<script src="../assets/site.js" defer></script>
+<p>This page moved to <a href="execution-and-compute-units.html#s1-3-2">execution-and-compute-units.html#s1-3-2</a>.</p>
+<script>(function(){var target="execution-and-compute-units.html",map={},fallback="s1-3-2";var old=location.hash.slice(1),next=map[old]||fallback;location.replace(target+(next?'#'+next:''));})();</script>
 </body>
 </html>

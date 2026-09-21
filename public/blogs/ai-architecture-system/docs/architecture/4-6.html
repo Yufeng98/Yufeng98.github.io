@@ -2,48 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>4.6 Spatial Dataflow I: PE Arrays and Distributed Local Memory · Architecture</title>
-<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<link rel="stylesheet" href="../assets/site.css" />
-<script>window.SITE_ROOT="../";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=accelerator-taxonomy.html#s4-2-4" />
+<link rel="canonical" href="accelerator-taxonomy.html#s4-2-4" />
+<title>Page moved</title>
 </head>
 <body>
-<header class="topbar">
-  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
-  <nav class="tabs"><a class="tab" href="../microarchitecture/index.html">Microarchitecture</a><a class="tab" href="../kernel/index.html">Kernel</a><a class="tab" href="../compiler/index.html">Compiler</a><a class="tab tab--active" href="../architecture/index.html">Architecture</a><a class="tab" href="../system/index.html">System</a><a class="tab" href="../algorithms/index.html">Algorithms</a></nav>
-  <div class="search">
-    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
-           aria-label="Search the outline" />
-    <div class="search-results" id="search-results" hidden></div>
-  </div>
-  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-  </button>
-</header>
-<div class="layout layout--section">
-<aside class="sidebar" id="sidebar">
-  <div class="sb-head">Architecture</div>
-  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="4-2.html"><span class="sb-n">4.2</span><span class="sb-t">AI Datacenter Context and Four Categories of Resource Pressure</span></a></li><li><a class="sb-link" href="4-3.html"><span class="sb-n">4.3</span><span class="sb-t">Core Taxonomy: Four Classes of AI Accelerator Architecture</span></a></li><li><a class="sb-link" href="4-4.html"><span class="sb-n">4.4</span><span class="sb-t">GPU: General-Purpose Parallel Execution and Specialized Matrix Computation</span></a></li><li><a class="sb-link" href="4-5.html"><span class="sb-n">4.5</span><span class="sb-t">NPU: Heterogeneous Compute Engines and Shared Local Memory</span></a></li><li><a class="sb-link sb-link--active" href="4-6.html"><span class="sb-n">4.6</span><span class="sb-t">Spatial Dataflow I: PE Arrays and Distributed Local Memory</span></a></li><li><a class="sb-link" href="4-7.html"><span class="sb-n">4.7</span><span class="sb-t">Spatial Dataflow II: Reconfigurable Architectures</span></a></li><li><a class="sb-link" href="4-8.html"><span class="sb-n">4.8</span><span class="sb-t">Spatial Dataflow III: Functional-Slice Streaming</span></a></li><li><a class="sb-link" href="4-9.html"><span class="sb-n">4.9</span><span class="sb-t">Compute-in-Memory: SRAM, DRAM, and the Location of Computation</span></a></li><li><a class="sb-link" href="4-10.html"><span class="sb-n">4.10</span><span class="sb-t">Compute Engines: Cross-Category Organization and Trade-offs</span></a></li><li><a class="sb-link" href="4-11.html"><span class="sb-n">4.11</span><span class="sb-t">Memory Hierarchy: From Hardware Cache to Software Scratchpad</span></a></li><li><a class="sb-link" href="4-15.html"><span class="sb-n">4.15</span><span class="sb-t">Physical Deployment Hierarchy and Scale-Up/Scale-Out Domains</span></a></li><li><a class="sb-link" href="4-16.html"><span class="sb-n">4.16</span><span class="sb-t">Node-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-17.html"><span class="sb-n">4.17</span><span class="sb-t">Rack-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-18.html"><span class="sb-n">4.18</span><span class="sb-t">Pod-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-20.html"><span class="sb-n">4.20</span><span class="sb-t">Topology Performance: Connectivity Is Not Effective Communication Performance</span></a></li><li><a class="sb-link" href="4-21.html"><span class="sb-n">4.21</span><span class="sb-t">Collective Semantics: Endpoint Data Transformation</span></a></li><li><a class="sb-link" href="4-22.html"><span class="sb-n">4.22</span><span class="sb-t">Collective Algorithms: Logical Communication Scheduling</span></a></li><li><a class="sb-link" href="4-23.html"><span class="sb-n">4.23</span><span class="sb-t">Collective–Topology Mapping and Communication Offload</span></a></li><li><a class="sb-link" href="4-24.html"><span class="sb-n">4.24</span><span class="sb-t">GPU Generational Evolution: Compute, Data Supply, and Cooperation Scope</span></a></li><li><a class="sb-link" href="4-26.html"><span class="sb-n">4.26</span><span class="sb-t">Cross-Generation Comparison: Numerical Formats, Structured Sparsity, and Peak Conventions</span></a></li><li><a class="sb-link" href="4-27.html"><span class="sb-n">4.27</span><span class="sb-t">Cross-Generation Comparison: Memory Hierarchy and Scale-Up Fabric</span></a></li><li><a class="sb-link" href="4-28.html"><span class="sb-n">4.28</span><span class="sb-t">Power Delivery, Cooling, and Practically Operable Capacity</span></a></li><li><a class="sb-link" href="4-29.html"><span class="sb-n">4.29</span><span class="sb-t">Future Design Challenges: Generality versus Specialization</span></a></li></ul>
-</aside>
-<main class="content">
-<nav class="crumbs"><a href="index.html">Architecture</a><span class="sep">/</span><span>§4.6</span></nav>
-<h1>Spatial Dataflow I: PE Arrays and Distributed Local Memory</h1>
-<div class="sources"><span class="sources-k">Sources</span>Survey §3, Fig. 4(c) and Table 2; additional PE-array and manycore cases follow the platform labels.</div>
-<div class="sec-body"><p>Spatial dataflow architectures map a computation graph directly onto distributed compute, memory and communication resources. Operator placement, local memory allocation and inter-operator data movement are all <strong>explicitly managed by the compiler</strong> and exposed to software, instead of being hidden behind caches or a centralized command stream. Controlling data movement explicitly cuts coordination overhead and memory traffic and improves locality — at the cost of requiring a compiler that can actually solve the placement problem.</p><p><strong>PE array</strong> designs divide the chip into many programmable processing elements, each with private SRAM, connected by an on-chip network. The compiler spreads computation across them and schedules the transfers between them, so different elements can run different operators or different pipeline stages. Examples include Tenstorrent <sup class="cite">[<a href="#ref-1">1</a>]</sup>, Meta MTIA <sup class="cite">[<a href="#ref-2">2</a>]</sup>, Tesla Dojo <sup class="cite">[<a href="#ref-3">3</a>]</sup> and Graphcore <sup class="cite">[<a href="#ref-4">4</a>]</sup>. These systems support a wider range of memory technologies than GPUs and NPUs — GDDR6, LPDDR, DDR4 and HBM all appear.</p><p>Cerebras extends the approach to a wafer-scale mesh <sup class="cite">[<a href="#ref-5">5</a>]</sup>. Rather than following program-counter order, it uses a data-driven execution model: fabric packets called <em>wavelets</em> carry both data and control information, and the arrival of a wavelet activates the corresponding task on a processing element. Execution is therefore driven by data availability rather than by a fixed instruction sequence.</p></div>
-<div class="subs"></div>
-<section class="refs"><h2 class="refs-h">References</h2><ol class="ref-list"><li class="ref" id="ref-1"><span class="ref-n">1.</span><span class="ref-t">Jasmina Vasiljevic and Davor Capalija. Blackhole &amp; tt-metalium: The standalone ai computer and its programming model. 2024 IEEE Hot Chips 36 Symposium (HCS), 2024.</span></li><li class="ref" id="ref-2"><span class="ref-n">2.</span><span class="ref-t">Joel Coburn et al. Meta&#x27;s Second Generation AI Chip: Model-Chip Co-Design and Productionization Experiences. Proceedings of the 52nd Annual International Symposium on Computer Architecture, 2025.</span></li><li class="ref" id="ref-3"><span class="ref-n">3.</span><span class="ref-t">Emil Talpes et al. The microarchitecture of dojo, tesla’s exa-scale computer. IEEE Micro, 2023.</span></li><li class="ref" id="ref-4"><span class="ref-n">4.</span><span class="ref-t">Zhe Jia et al. Dissecting the graphcore ipu architecture via microbenchmarking. arXiv preprint arXiv:1912.03413, 2019.</span></li><li class="ref" id="ref-5"><span class="ref-n">5.</span><span class="ref-t">Sean Lie. Cerebras architecture deep dive: First look inside the hardware/software co-design for deep learning. IEEE Micro, 2023.</span></li></ol></section>
-<nav class="prevnext"><a class="pn pn--prev" href="4-5.html"><span class="pn-k">← Previous</span><span class="pn-t">4.5 NPU: Heterogeneous Compute Engines and Shared Local Memory</span></a><a class="pn pn--next" href="4-7.html"><span class="pn-k">→ Next</span><span class="pn-t">4.7 Spatial Dataflow II: Reconfigurable Architectures</span></a></nav>
-</main>
-<aside class="toc" id="toc">
-  <div class="toc-head">On this page</div>
-  <ul class="toc-list"></ul>
-</aside>
-</div>
-<div class="scrim" id="scrim" hidden></div>
-<script src="../assets/site.js" defer></script>
+<p>This page moved to <a href="accelerator-taxonomy.html#s4-2-4">accelerator-taxonomy.html#s4-2-4</a>.</p>
+<script>(function(){var target="accelerator-taxonomy.html",map={},fallback="s4-2-4";var old=location.hash.slice(1),next=map[old]||fallback;location.replace(target+(next?'#'+next:''));})();</script>
 </body>
 </html>

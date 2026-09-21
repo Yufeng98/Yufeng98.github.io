@@ -2,47 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>4.20 Topology Performance: Connectivity Is Not Effective Communication Performance · Architecture</title>
-<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<link rel="stylesheet" href="../assets/site.css" />
-<script>window.SITE_ROOT="../";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="refresh" content="0; url=deployment-and-interconnect.html#s4-5-6" />
+<link rel="canonical" href="deployment-and-interconnect.html#s4-5-6" />
+<title>Page moved</title>
 </head>
 <body>
-<header class="topbar">
-  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
-  <nav class="tabs"><a class="tab" href="../microarchitecture/index.html">Microarchitecture</a><a class="tab" href="../kernel/index.html">Kernel</a><a class="tab" href="../compiler/index.html">Compiler</a><a class="tab tab--active" href="../architecture/index.html">Architecture</a><a class="tab" href="../system/index.html">System</a><a class="tab" href="../algorithms/index.html">Algorithms</a></nav>
-  <div class="search">
-    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
-           aria-label="Search the outline" />
-    <div class="search-results" id="search-results" hidden></div>
-  </div>
-  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-  </button>
-</header>
-<div class="layout layout--section">
-<aside class="sidebar" id="sidebar">
-  <div class="sb-head">Architecture</div>
-  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="4-2.html"><span class="sb-n">4.2</span><span class="sb-t">AI Datacenter Context and Four Categories of Resource Pressure</span></a></li><li><a class="sb-link" href="4-3.html"><span class="sb-n">4.3</span><span class="sb-t">Core Taxonomy: Four Classes of AI Accelerator Architecture</span></a></li><li><a class="sb-link" href="4-4.html"><span class="sb-n">4.4</span><span class="sb-t">GPU: General-Purpose Parallel Execution and Specialized Matrix Computation</span></a></li><li><a class="sb-link" href="4-5.html"><span class="sb-n">4.5</span><span class="sb-t">NPU: Heterogeneous Compute Engines and Shared Local Memory</span></a></li><li><a class="sb-link" href="4-6.html"><span class="sb-n">4.6</span><span class="sb-t">Spatial Dataflow I: PE Arrays and Distributed Local Memory</span></a></li><li><a class="sb-link" href="4-7.html"><span class="sb-n">4.7</span><span class="sb-t">Spatial Dataflow II: Reconfigurable Architectures</span></a></li><li><a class="sb-link" href="4-8.html"><span class="sb-n">4.8</span><span class="sb-t">Spatial Dataflow III: Functional-Slice Streaming</span></a></li><li><a class="sb-link" href="4-9.html"><span class="sb-n">4.9</span><span class="sb-t">Compute-in-Memory: SRAM, DRAM, and the Location of Computation</span></a></li><li><a class="sb-link" href="4-10.html"><span class="sb-n">4.10</span><span class="sb-t">Compute Engines: Cross-Category Organization and Trade-offs</span></a></li><li><a class="sb-link" href="4-11.html"><span class="sb-n">4.11</span><span class="sb-t">Memory Hierarchy: From Hardware Cache to Software Scratchpad</span></a></li><li><a class="sb-link" href="4-15.html"><span class="sb-n">4.15</span><span class="sb-t">Physical Deployment Hierarchy and Scale-Up/Scale-Out Domains</span></a></li><li><a class="sb-link" href="4-16.html"><span class="sb-n">4.16</span><span class="sb-t">Node-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-17.html"><span class="sb-n">4.17</span><span class="sb-t">Rack-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link" href="4-18.html"><span class="sb-n">4.18</span><span class="sb-t">Pod-Scale Scale-Up Interconnect</span></a></li><li><a class="sb-link sb-link--active" href="4-20.html"><span class="sb-n">4.20</span><span class="sb-t">Topology Performance: Connectivity Is Not Effective Communication Performance</span></a></li><li><a class="sb-link" href="4-21.html"><span class="sb-n">4.21</span><span class="sb-t">Collective Semantics: Endpoint Data Transformation</span></a></li><li><a class="sb-link" href="4-22.html"><span class="sb-n">4.22</span><span class="sb-t">Collective Algorithms: Logical Communication Scheduling</span></a></li><li><a class="sb-link" href="4-23.html"><span class="sb-n">4.23</span><span class="sb-t">Collective–Topology Mapping and Communication Offload</span></a></li><li><a class="sb-link" href="4-24.html"><span class="sb-n">4.24</span><span class="sb-t">GPU Generational Evolution: Compute, Data Supply, and Cooperation Scope</span></a></li><li><a class="sb-link" href="4-26.html"><span class="sb-n">4.26</span><span class="sb-t">Cross-Generation Comparison: Numerical Formats, Structured Sparsity, and Peak Conventions</span></a></li><li><a class="sb-link" href="4-27.html"><span class="sb-n">4.27</span><span class="sb-t">Cross-Generation Comparison: Memory Hierarchy and Scale-Up Fabric</span></a></li><li><a class="sb-link" href="4-28.html"><span class="sb-n">4.28</span><span class="sb-t">Power Delivery, Cooling, and Practically Operable Capacity</span></a></li><li><a class="sb-link" href="4-29.html"><span class="sb-n">4.29</span><span class="sb-t">Future Design Challenges: Generality versus Specialization</span></a></li></ul>
-</aside>
-<main class="content">
-<nav class="crumbs"><a href="index.html">Architecture</a><span class="sep">/</span><span>§4.20</span></nav>
-<h1>Topology Performance: Connectivity Is Not Effective Communication Performance</h1>
-<div class="sources"><span class="sources-k">Sources</span>Survey §4 and §6.3; network-analysis foundations retained from the original outline.</div>
-<div class="sec-body"><p>Putting the three tiers side by side, each topology choice trades the same four quantities — bandwidth, latency, scalability and implementation cost — against each other differently:</p><ul><li><strong>PCIe switching</strong> is the broadly supported baseline, but surveyed deployments generally give lower per-accelerator bandwidth than purpose-built scale-up fabrics.</li><li><strong>Direct full meshes</strong> give single-hop communication, but link count grows quadratically with the number of endpoints.</li><li><strong>Switched any-to-any fabrics</strong> accommodate concurrent collectives and irregular traffic, provided switch capacity, routing and endpoint injection bandwidth all suffice — at the cost of switch power and packaging complexity.</li><li><strong>Tori</strong> keep node degree bounded as the system grows, but their larger diameter can raise communication latency.</li><li><strong>Dragonfly- and Boardfly-like hierarchies</strong> shorten paths without full-mesh connectivity at system scale, while UB-Mesh and Ethernet-switched designs add further tiers of local and global connectivity.</li></ul><p>The reason this section exists as its own topic is that none of these properties is a performance number. A topology defines the paths, the locality hierarchy and the contention domains that are <em>available</em>; what a workload actually achieves depends on how its communication is scheduled onto them. Topology is therefore co-designed across node, rack and pod scales rather than chosen once.</p></div>
-<div class="subs"></div>
-<nav class="prevnext"><a class="pn pn--prev" href="4-18.html"><span class="pn-k">← Previous</span><span class="pn-t">4.18 Pod-Scale Scale-Up Interconnect</span></a><a class="pn pn--next" href="4-21.html"><span class="pn-k">→ Next</span><span class="pn-t">4.21 Collective Semantics: Endpoint Data Transformation</span></a></nav>
-</main>
-<aside class="toc" id="toc">
-  <div class="toc-head">On this page</div>
-  <ul class="toc-list"></ul>
-</aside>
-</div>
-<div class="scrim" id="scrim" hidden></div>
-<script src="../assets/site.js" defer></script>
+<p>This page moved to <a href="deployment-and-interconnect.html#s4-5-6">deployment-and-interconnect.html#s4-5-6</a>.</p>
+<script>(function(){var target="deployment-and-interconnect.html",map={},fallback="s4-5-6";var old=location.hash.slice(1),next=map[old]||fallback;location.replace(target+(next?'#'+next:''));})();</script>
 </body>
 </html>
