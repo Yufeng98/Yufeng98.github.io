@@ -112,8 +112,6 @@ a { color: inherit; text-decoration: none; }
 }
 .tab:hover { background: var(--bg-soft); color: var(--fg); }
 .tab--active { color: var(--accent); background: var(--accent-bg); font-weight: 600; }
-.tab-n { font-size: 11px; color: var(--fg-mute); font-variant-numeric: tabular-nums; }
-.tab--active .tab-n { color: var(--accent); }
 
 /* ------------------------------------------------------------------- search */
 
@@ -325,6 +323,123 @@ a { color: inherit; text-decoration: none; }
 a.ext { color: var(--accent); }
 a.ext:hover { text-decoration: underline; }
 
+/* --------------------------------------------- section page: body content */
+
+.sec-body { margin-top: 20px; }
+.sub-body { margin: 12px 0 28px; }
+
+.sec-body p, .sub-body p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--fg);
+}
+.sec-body ul, .sub-body ul { margin: 0 0 14px; padding-left: 22px; }
+.sec-body li, .sub-body li {
+  margin: 0 0 6px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--fg);
+}
+.sec-body code, .sub-body code, .sources code, .note code, .table-wrap code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  font: 0.88em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+blockquote.callout {
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-soft);
+  border-radius: 0 8px 8px 0;
+  color: var(--fg-dim);
+  font-size: 14.5px;
+}
+
+/* figures */
+
+figure.fig, figure.tbl { margin: 24px 0; }
+
+figure.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  /* the diagrams are dark ink on a transparent ground: keep a light plate in dark mode */
+  background: #ffffff;
+}
+
+figure.fig figcaption, figure.tbl figcaption {
+  margin-top: 10px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--fg-mute);
+}
+figure.tbl figcaption { margin: 0 0 10px; }
+figure.fig figcaption strong, figure.tbl figcaption strong { color: var(--fg-dim); }
+
+/* tables */
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+.table-wrap table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table-wrap th, .table-wrap td {
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border-soft);
+}
+.table-wrap th {
+  background: var(--bg-soft);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+.table-wrap td { color: var(--fg-dim); font-variant-numeric: tabular-nums; }
+.table-wrap td strong { color: var(--fg); }
+.table-wrap tbody tr:last-child td { border-bottom: 0; }
+.table-wrap tbody tr:hover { background: var(--bg-soft); }
+
+/* citations and references */
+
+sup.cite { font-size: 10.5px; font-weight: 600; line-height: 0; white-space: nowrap; }
+sup.cite a { color: var(--accent); text-decoration: none; }
+sup.cite a:hover { text-decoration: underline; }
+
+.refs { margin: 36px 0 0; padding-top: 18px; border-top: 1px solid var(--border-soft); }
+.refs-h {
+  margin: 0 0 12px;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--fg-mute);
+}
+.ref-list { margin: 0; padding: 0; list-style: none; }
+.ref {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--fg-mute);
+}
+.ref-n { flex: 0 0 24px; text-align: right; font-variant-numeric: tabular-nums; }
+.ref-t { min-width: 0; }
+.ref:target { color: var(--fg-dim); }
+.ref:target .ref-n { color: var(--accent); font-weight: 650; }
+
 /* ------------------------------------------- section page: subsection titles */
 
 .subs { margin-top: 30px; border-top: 1px solid var(--border-soft); }
@@ -393,6 +508,11 @@ h2.sub:hover .hash { opacity: 1; }
 /* -------------------------------------------------- module page: row listing */
 
 .rows { margin-top: 26px; border-top: 1px solid var(--border-soft); }
+.module-empty {
+  margin: 28px 0 0;
+  color: var(--fg-mute);
+  font-size: 14px;
+}
 .row {
   display: flex;
   align-items: baseline;
@@ -454,9 +574,6 @@ h2.sub:hover .hash { opacity: 1; }
 /* ------------------------------------------------------------------- home */
 
 .home-h1 { font-size: 34px; margin-bottom: 10px; }
-.tagline { margin: 0 0 6px; font-size: 16px; color: var(--fg-dim); }
-.meta { margin: 0 0 22px; font-size: 13px; color: var(--fg-mute); }
-.meta strong { font-weight: 600; color: var(--fg-dim); }
 
 .prose p { margin: 0 0 12px; color: var(--fg-dim); font-size: 14.5px; line-height: 1.72; }
 .prose strong { color: var(--fg); }
@@ -489,15 +606,6 @@ h2.sub:hover .hash { opacity: 1; }
   color: var(--fg-mute);
   font-variant-numeric: tabular-nums;
 }
-
-.src-map {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 14px 18px;
-  background: var(--bg-soft);
-}
-.src-map summary { cursor: pointer; font-size: 14px; font-weight: 600; }
-.src-map .prose { margin-top: 12px; }
 
 /* -------------------------------------------------------------- responsive */
 
