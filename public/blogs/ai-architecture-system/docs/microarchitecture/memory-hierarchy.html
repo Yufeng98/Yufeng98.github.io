@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>1.5 Memory Hierarchy · Microarchitecture</title>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="../assets/site.css" />
+<script>window.SITE_ROOT="../";</script>
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle section list" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <a class="brand" href="../index.html">AI Architecture &amp; Systems</a>
+  <nav class="tabs"><a class="tab tab--active" href="../microarchitecture/index.html">Microarchitecture</a><a class="tab" href="../kernel/index.html">Kernel</a><a class="tab" href="../compiler/index.html">Compiler</a><a class="tab" href="../architecture/index.html">Architecture</a><a class="tab" href="../system/index.html">System</a><a class="tab" href="../algorithms/index.html">Algorithms</a></nav>
+  <div class="search">
+    <input id="search-input" type="search" placeholder="Search    /" autocomplete="off"
+           aria-label="Search the outline" />
+    <div class="search-results" id="search-results" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Toggle dark mode">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+</header>
+<div class="layout layout--section">
+<aside class="sidebar" id="sidebar">
+  <div class="sb-head">Microarchitecture</div>
+  <ul class="sb-list"><li><a class="sb-link" href="index.html">Overview</a></li><li><a class="sb-link" href="numerical-representation.html"><span class="sb-n">1.2</span><span class="sb-t">Numerical Representation, Arithmetic, and Precision</span></a></li><li><a class="sb-link" href="execution-and-compute-units.html"><span class="sb-n">1.3</span><span class="sb-t">Execution Organization and Compute Units</span></a></li><li><a class="sb-link sb-link--active" href="memory-hierarchy.html"><span class="sb-n">1.5</span><span class="sb-t">Memory Hierarchy</span></a></li><li><a class="sb-link" href="matrix-engine-evolution.html"><span class="sb-n">1.8</span><span class="sb-t">Matrix-Engine Evolution and Non-GEMM Support</span></a></li></ul>
+</aside>
+<main class="content">
+<nav class="crumbs"><a href="index.html">Microarchitecture</a><span class="sep">/</span><span>§1.5</span></nav>
+<h1>Memory Hierarchy</h1>
+<div class="subs"><h2 class="sub" id="s1-5-2"><span class="sub-n">1.5.2</span><span class="sub-t">On-Chip SRAM Management: Cache, Scratchpad, and Dedicated Buffers</span><a class="hash" href="#s1-5-2" aria-label="Link to On-Chip SRAM Management: Cache, Scratchpad, and Dedicated Buffers">#</a></h2><div class="sub-body"><p>On-chip SRAM is the same circuit everywhere; what differs is <em>who decides what lives in it</em>. That choice runs along a spectrum, from caches where the hardware decides implicitly to scratchpads where software decides explicitly. The trade is programmability and compiler simplicity on one end against performance predictability and quality of service on the other.</p><figure class="fig"><img src="../assets/figures/memory-hierarchy.svg" alt="Hardware-managed cache and software-managed on-chip SRAM across CPUs, GPUs, and domain-specific accelerators. Blue denotes caches, orange denotes scratchpads, grey denotes compute." loading="lazy" /><figcaption>Hardware-managed cache and software-managed on-chip SRAM across CPUs, GPUs, and domain-specific accelerators. Blue denotes caches, orange denotes scratchpads, grey denotes compute.</figcaption></figure><p><strong>CPUs sit at the hardware-managed end.</strong> Multi-level caches decide placement, replacement and coherence on their own, and software gets to pretend it is addressing one flat memory. That is excellent for generality — irregular and data-dependent access patterns are handled without any special effort — but it makes performance hard to reason about, because whether an access hits or misses depends on dynamic execution behaviour you cannot see.</p><p>Fully hardware-managed caches have not disappeared from AI accelerators. Intel's Gaudi 3 uses configurable SRAM that can act as one globally shared L3 or as per-core L2 caches, and adds semantics-aware caching on top: a Memory Context ID tags cache lines by how the algorithm uses them, and allocation hints let a developer say whether data belongs in L2, L3, or both.</p><p><strong>GPUs and domain-specific accelerators expose part of the SRAM directly.</strong> In an NVIDIA GPU the SRAM inside each streaming multiprocessor is partitioned between a hardware-managed L1 cache and a software-managed <em>shared memory</em>. A CUDA programmer allocates shared memory explicitly for tiling, while still letting the L1 and L2 caches handle the accesses that hardware serves better. Blackwell extends this further with a dedicated <strong>tensor memory</strong> in each SM, reserved for Tensor Core operands <sup class="cite">[<a href="#ref-1">1</a>]</sup>.</p><p>Explicit scratchpads move real work onto the programmer and the compiler: tile sizing, double buffering, prefetch scheduling and synchronization all become part of the performance contract. What you get back is determinism. Data placement and movement are predictable, which is what makes tail latency, interference isolation and quality-of-service guarantees achievable. AWS NeuronCore is built around this compiler-managed locality model <sup class="cite">[<a href="#ref-2">2</a>]</sup>.</p><p>Increasingly, this management extends past the chip. NVSHMEM gives GPUs a distributed shared-memory abstraction: each GPU keeps its own memory, but a symmetric region is exposed on every device so kernels can read, write and perform atomics on remote GPU memory over NVLink, PCIe or InfiniBand <sup class="cite">[<a href="#ref-3">3</a>]</sup>. Groq pushes the idea across the network, backing a logically shared global address space with distributed on-chip SRAM. Rather than congestion-aware flow control, it uses software-scheduled networking, where the compiler resolves contention and schedules fine-grained transfers on each link — about 2.5% metadata overhead in exchange for communication behaviour that is highly deterministic <sup class="cite">[<a href="#ref-4">4</a>]</sup>.</p></div></div>
+<section class="refs"><h2 class="refs-h">References</h2><ol class="ref-list"><li class="ref" id="ref-1"><span class="ref-n">1.</span><span class="ref-t">Kyle Aubrey and Nick Stam. <a class="ext" href="https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/" target="_blank" rel="noopener">Inside NVIDIA Blackwell Ultra: The Chip Powering the AI Factory Era</a>. 2025.</span></li><li class="ref" id="ref-2"><span class="ref-n">2.</span><span class="ref-t">AWS. <a class="ext" href="https://awsdocs-neuron.readthedocs-hosted.com/en/v2.31.1/about-neuron/arch/neuron-hardware/neuron-core-v4.html" target="_blank" rel="noopener">NeuronCore-v4 Architecture</a>. 2026. AWS Neuron SDK 2.31.1 documentation.</span></li><li class="ref" id="ref-3"><span class="ref-n">3.</span><span class="ref-t">NVIDIA. <a class="ext" href="https://docs.nvidia.com/nvshmem/archives/nvshmem-101/api/docs/gen/overview.html" target="_blank" rel="noopener">Programming Model Overview</a>. 2020. NVSHMEM 1.0.1 documentation.</span></li><li class="ref" id="ref-4"><span class="ref-n">4.</span><span class="ref-t">Dennis Abts et al. <a class="ext" href="https://doi.org/10.1145/3470496.3527405" target="_blank" rel="noopener">A software-defined tensor streaming multiprocessor for large-scale machine learning</a>. Proceedings of the 49th Annual International Symposium on Computer Architecture, 2022.</span></li></ol></section>
+<nav class="prevnext"><a class="pn pn--prev" href="execution-and-compute-units.html"><span class="pn-k">← Previous</span><span class="pn-t">1.3 Execution Organization and Compute Units</span></a><a class="pn pn--next" href="matrix-engine-evolution.html"><span class="pn-k">→ Next</span><span class="pn-t">1.8 Matrix-Engine Evolution and Non-GEMM Support</span></a></nav>
+</main>
+<aside class="toc" id="toc">
+  <div class="toc-head">On this page</div>
+  <ul class="toc-list"><li><a href="#s1-5-2" data-toc="s1-5-2"><span class="toc-n">1.5.2</span>On-Chip SRAM Management: Cache, Scratchpad, and Dedicated Buffers</a></li></ul>
+</aside>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
