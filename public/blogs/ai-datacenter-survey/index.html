@@ -15,7 +15,7 @@
 <header class="site-header">
   <h1>AI Model Size vs Hardware Scaling</h1>
   <div class="links">
-    <a class="btn primary" id="paper-link" href="#" hidden>Paper (PDF)</a>
+    <a class="btn primary" id="paper-link" href="#" hidden>Paper (arXiv)</a>
     <a class="btn" href="https://github.com/Yufeng98/AI-datacenter" target="_blank" rel="noopener">Open research corpus on GitHub</a>
     <a class="btn" href="#scaling">Interactive scaling chart</a>
   </div>
@@ -23,7 +23,7 @@
 
 <section id="intro">
   <h2>About the survey</h2>
-  <p class="lede">Rapidly growing AI workloads are driving large investments in AI datacenters. This survey classifies industrial AI accelerators into four architectural categories and compares their compute and memory organizations. It examines how node-, rack-, and pod-scale scale-up interconnects support collective communication, and it traces architectural evolution across accelerator generations, showing how increases in arithmetic throughput are accompanied by changes in data delivery, execution coordination, communication, and deployment infrastructure. Together, these analyses highlight key challenges in future AI datacenter design, from workload flexibility, data movement, and communication efficiency to power delivery, cooling, and rapid model evolution, and they show how the trade-off between generality and specialization extends from individual accelerators to datacenter-scale systems. The chart below is an interactive version of the survey's scaling figure: frontier-model parameter counts against per-accelerator dense FP16/BF16 compute, DRAM bandwidth and capacity, and scale-up interconnect bandwidth, extended with accelerator generations documented in the survey's <a href="https://github.com/Yufeng98/AI-datacenter" target="_blank" rel="noopener">open research corpus</a>.</p>
+  <p class="lede">Rapidly growing AI workloads are driving large investments in AI datacenters. This survey (<a href="https://arxiv.org/abs/2609.26829" target="_blank" rel="noopener">arXiv:2609.26829</a>) classifies industrial AI accelerators into four architectural categories and compares their compute and memory organizations. It examines how node-, rack-, and pod-scale scale-up interconnects support collective communication, and it traces architectural evolution across accelerator generations, showing how increases in arithmetic throughput are accompanied by changes in data delivery, execution coordination, communication, and deployment infrastructure. Together, these analyses highlight key challenges in future AI datacenter design, from workload flexibility, data movement, and communication efficiency to power delivery, cooling, and rapid model evolution, and they show how the trade-off between generality and specialization extends from individual accelerators to datacenter-scale systems. The chart below is an interactive version of the survey's scaling figure: frontier-model parameter counts against per-accelerator dense FP16/BF16 compute, DRAM bandwidth and capacity, and scale-up interconnect bandwidth, extended with accelerator generations documented in the survey's data repository (GitHub: <a href="https://github.com/Yufeng98/AI-datacenter" target="_blank" rel="noopener">github.com/Yufeng98/AI-datacenter</a>).</p>
 </section>
 
 <section id="scaling">
@@ -76,14 +76,25 @@
   </details>
 </section>
 
+<section id="citation">
+  <h2>Citation</h2>
+  <p class="muted">If you find this survey or its data useful, please cite:</p>
+<pre class="bibtex"><code>@article{gu2026balancing,
+  title   = {Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture},
+  author  = {Gu, Yufeng and Wang, Jiazhen and Das, Reetuparna},
+  journal = {arXiv preprint arXiv:2609.26829},
+  year    = {2026}
+}</code></pre>
+</section>
+
 <footer>
   <p>Chart built with <a href="https://echarts.apache.org/" target="_blank" rel="noopener">Apache ECharts</a>. Data and figures &copy; the authors; vendor figures belong to their respective owners.</p>
 </footer>
 
 </div>
 <script>
-  // Set to the public PDF URL once the paper is available; the button stays hidden while empty.
-  window.PAPER_URL = "";
+  // Public paper URL; the header button stays hidden while empty.
+  window.PAPER_URL = "https://arxiv.org/abs/2609.26829";
 </script>
 <script src="js/chart.js"></script>
 </body>
