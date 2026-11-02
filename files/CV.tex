@@ -1,0 +1,338 @@
+\documentclass[10pt,a4paper,palatine]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+
+% personal data
+\name{Yufeng Gu}{}
+
+% \address{\faMapMarker\enspace  4844 Bob and Betty Beyster Building, 2260 Hayward}{Ann Arbor, MI, USA, 48109-2121}{\faGlobe \enspace\href{https://web.eecs.umich.edu/~yufenggu/}{https://yufeng98.github.io/} \enspace \faEnvelopeO\enspace {yufenggu@umich.edu} }
+
+\address{\faLinkedin \enspace https://www.linkedin.com/in/guyufeng}{\faGlobe \enspace{https://yufeng98.github.io/} {\enspace \faEnvelopeO\enspace yufenggu@umich.edu} }
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                              % clear header and footer
+\fancyfoot[C]{\small Updated November 2026} % center‐justify footer text
+  
+\setlength{\tabcolsep}{12pt}
+\renewcommand{\labelitemi}{\small$\bullet$}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Education}
+\vspace*{1mm}
+
+{\customcventry{Sep. 2020 - Apr. 2026}{Ph.D., Computer Science and Engineering Department}{University of Michigan}{Ann Arbor, MI, USA}{}{}}
+\vspace*{2mm}
+ 
+{\customcventry{Sep. 2016 - June 2020}{B.Eng., College of Information Science and Electronic Engineering}{Zhejiang University (ZJU)}{Hangzhou, China}{}{}}
+
+\vspace*{2mm}
+
+
+
+
+\section{Experience}
+\vspace*{1mm}
+
+{\customcventry{May 2026 – Now}{Research Scientist, AI system Co-design}{Meta Platform Inc.}{Menlo Park, CA, USA}{}{}}
+Conduct research on architecting next-generator in-house AI datacenter. Co-design KV cache management policies and multi-tier memory and storage architectures for agentic AI workloads.
+\vspace*{2mm}
+
+{\customcventry{Sep. 2020 – Apr. 2026}{Graduate Research Assistant, Advisor: Reetuparna Das}{University of Michigan}{Ann Arbor, MI, USA}{}{}}
+Co-design architecture and system for large-scale emerging applications, including Generative AI and genome sequencing. Publish papers at top conferences including ISCA, ASPLOS and HPCA, awarded as Communication of ACM Research Highlights (24/10,000+) and HPCA Distinguished Artifact Honorable Mention (3/29).
+\vspace*{2mm}
+
+
+{\customcventry{May 2023 – Aug. 2023}{Performance Architect Intern, Manager: Wei-han Lien}{Tenstorrent Inc.}{Santa Clara, CA, USA}{}{}}
+Build a profile-guided agile performance model for Tensix AI accelerator, including computation and communication between RISC-V cores, with $<$10\% error rate. This model reduces the performance modeling time from a few hours to $\sim$5 minutes, enabling fast kernel development and optimization.
+\vspace*{-1mm}
+\setlength{\parskip}{1em}
+
+
+{\customcventry{June 2022 – Aug. 2022}{Graduate Research Intern, Manager: Nilesh Jain}{Intel Labs}{Hillsboro, OR, USA}{}{}}
+\vspace*{-4mm}
+Develop an offline profile and online prediction-based resource scheduler for Quality of Service (QoS)-aware job co-location for ML inference, achieving up to 1.4$\times$ request throughput improvement over single model deployment and reducing scheduling times from $\sim$30 minutes to $\sim$10 seconds compared to state-of-the-art schedulers.
+\vspace*{-1mm}
+
+
+{\customcventry{Nov. 2019 – Mar. 2020}{Undergraduate Research Intern, Advisor: James Duncan, Xiaoxiao Li}{Yale University}{New Heaven, CT, USA}{}{}}
+\vspace*{-4mm}
+Interpretation on ASD with fMRI and Deep Learning Models. Publications on MICCAI and MedIA.
+\vspace*{-1mm}
+
+
+{\customcventry{July 2019 – Sep. 2019}{Undergraduate Research Intern, Advisor: Babak Falsafi}{École Polytechnique Fédérale De Lausanne (EPFL)}{Lausanne, Switzerland}{}{}}
+\vspace{-4mm}
+Patched QFlex Simulator (from Makefile to CMake compilation) and accelerated activation functions for DNN.
+\vspace*{-1mm}
+
+
+\section{Award \& Honors}
+\vspace{-2mm}
+
+\textbf{Outstanding Young Speaker Award} (APPT 2025) \hfill {\itshape July 2025} \\
+Hardware-Software Co-Design for Scalable LLM Inference
+\vspace{-2mm}
+
+\textbf{Distinguished Artifact Honorable Mention} (HPCA 2025) \hfill {\itshape March 2025} \\
+Multi-Dimensional Vector ISA Extension for Mobile In-Cache Computing. (3/29 Artifacts)
+\vspace{-2mm}
+
+\begin{samepage}
+\textbf{Communication of ACM (CACM) Research Highlights}  \hfill {\itshape July 2024} \\
+GenDP: A Framework of Dynamic Programming Acceleration for Genome Sequencing Analysis. \\
+\textit{CACM Research Highlights section selects 24/10,000+ papers from ACM conferences per year, reprinting the most significant and influential results across Computer Science.}
+\par
+\end{samepage}
+\vspace{-2mm}
+
+\textbf{University of Michigan Rackham Graduate Student Research Grant} (\$3000, role: PI) \hfill {\itshape Apr. 2024} \\
+Pangenomics Benchmark Suite and Characterization.
+\vspace{-2mm}
+
+University of Michigan Rackham Travel Grant, ISCA/HPCA Travel Grant \hfill {\itshape 2023, 2025} \\
+\vspace{-6mm}
+
+\textbf{Fellowship of Summer@EPFL} (2\% applicants awarded) \hfill {\itshape July 2019} \\
+\vspace{-6mm}
+
+Tang Lixin Fellowship (2{\textperthousand} students awarded) \hfill {\itshape Nov. 2017, 2018, 2019} \\
+\vspace{-6mm}
+
+Outstanding Student Leaders in Zhejiang University (3\% students awarded) \hfill {\itshape Oct. 2017, 2019} \\
+\vspace{-6mm}
+
+First-Class Scholarship for Outstanding Students (2\% students awarded) \hfill {\itshape Oct. 2017} \\
+\vspace{-5mm}
+
+
+
+\section{Under-Review and Preprint Publications}
+\vspace{-2mm} 
+
+\textbf{Yufeng Gu}, Jiazhen Wang, Reetuparna Das. "Balancing Generality and Specialization: A Survey on AI Datacenter Hardware Architecture." \href{https://arxiv.org/abs/2609.26829}{arXiv:2609.26829}, 2026. \textit{(Under Submission to ACM Computing Surveys)}
+
+Sumanth Umesh, Ning Liang, \textbf{Yufeng Gu}, Reetuparna Das. "Addressing In-Memory Database Bottlenecks with CXL Memory Expansion."
+% \textit{(Under Submission)}
+\textit{(Under Submission to VLDB)}
+
+\textbf{Yufeng Gu}, Reetuparna Das. "ADAPT: Context-Aware Scheduling for LLM Inference on a Heterogeneous Decoding Cluster"
+% \textit{(Under Submission)}
+\textit{(Under Submission to ISCA'27)}
+
+\textbf{Yufeng Gu}, Samel Gobriel, Nilesh Jain, Reetuparna Das. "BRIDGE: A Systolic Processing-In-Memory Architecture for Narrow GEMMs in LLM Inference"
+% \textit{(Under Submission)}
+\textit{(Under Submission to IEEE Transactions on Computers)}
+
+% \textbf{Yufeng Gu}, Vui Seng Chua, Nilesh Jain, Ravishankar Iyer, Reetuparna Das. "Fast Resource Management for Quality of Service-Aware Co-Location of Machine Learning Inference." 
+% % \textit{(Under Submission)}
+% \textit{(Under Submission to ASP-DAC'27)}
+
+
+Jiazhen Wang, Finn Moore, \textbf{Yufeng Gu}, Shashwat Jaguri, Dong Eun Kim,
+Nicoletta Risi, Reetuparna Das. 
+"SpikeGate: An Event-Driven Neuromorphic System for Efficient Edge Vision"
+\textit{(Under Submission to DAC'27)}
+
+\section{Peer-Reviewed Publications}
+\vspace{-2mm} 
+
+* equal contribution
+
+\textbf{[12]} Pyeongsu Park, Hwijoon Lim, Seah Kim, Mustafa Ozdal, Yi-Chien Lin, Kevin Siu, Pavan Yalamanchili, Benjamin Ghaemmaghami, \textbf{Yufeng Gu}, Jongsoo Park, Joel Coburn, Paul Baumstarck, Shobhit Kanaujia, Chunqiang Tang. "AIPerf: Meta's Performance Modeling and HW/SW Co-design Framework for Datacenter-Scale LLM Training." In \href{https://www.microarch.org/micro59/program/}{59th IEEE/ACM International Symposium on Microarchitecture (MICRO'26), Industry Track}.
+
+\textbf{[11]} Danyang Chen*, \textbf{Yufeng Gu*}, Yibo Huang, Chengxuan Pei, Peichun Hua, Yang Zhou, Yunming Xiao. "Unlocking Software-defined GPU Fabric Scheduling in the LLM Era." To appear in ACM SIGOPS Asia-Pacific Workshop on Systems (APSys'26).
+
+
+\textbf{[10]} Jiajun Luo, Yu Jin, \textbf{Yufeng Gu}, Jinyi Deng, Yang Hu and Shuwen Deng. "Stone-Skimming: Attacking Big-Data Analytics Applications with Page Table Walk." In 63rd ACM/IEEE Design Automation Conference (DAC'26).
+
+\textbf{[9]} Noah Kaplan, Jan-Niklas Schmelzle, \textbf{Yufeng Gu}, Christopher Batten, Reetuparna Das. "PangenomicsBench: A Benchmark Suite and Characterization of Pangenomics." In IEEE International Symposium on Workload Characterization (IISWC'25).
+
+\textbf{[8]} \textbf{Yufeng Gu}, Arun Subramaniyan, Tim Dunn, Alireza Khadem, Kuan-Yu Chen, Somnath Paul, Md Vasimuddin, Sanchit Misra, David Blaauw, Satish Narayanasamy, Reetuparna Das. "GenDP: A Framework of Dynamic Programming Acceleration for Genome Sequencing Analysis." Communications of the ACM, 2025.
+
+\begin{samepage}
+\textbf{[7]} Alireza Khadem*, Kamalavasan Kamalakkannan*, Zhenyan Zhu, Akash Poptani, \textbf{Yufeng Gu}, Jered Benjamin Dominguez-Trujillo,  Nishil Talati, Daichi Fujiki, Scott Mahlke, Galen Shipman, Reetuparna Das. "DX100: Programmable Data Access Accelerator for Indirection." In Proceedings of the 52th Annual International Symposium on Computer Architecture (ISCA'25).
+\par
+\end{samepage}
+
+\textbf{[6]} \textbf{Yufeng Gu*}, Alireza Khadem*, Sumanth Umesh, Ning Liang, Xavier Servot, Onur Mutlu, Ravishankar Iyer, Reetuparna Das. "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference." In Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS'25). 
+{\color{red} \textbf{In Progress of Technology Transfer to SK Hynix's Next Generation Datacenter}}
+
+\textbf{[5]} Alireza Khadem, Daichi Fujiki, Hilbert Chen, \textbf{Yufeng Gu}, Nishil Talati, Scott Mahlke, Reetuparna Das. "Multi-Dimensional Vector ISA Extension for Mobile In-Cache Computing." In 2025 IEEE International Symposium on High-Performance Computer Architecture (HPCA'25). {\color{red} \textbf{Distinguished Artifact Honorable Mention (3/29)}}
+
+\textbf{[4]} \textbf{Yufeng Gu}, Arun Subramaniyan, Tim Dunn, Alireza Khadem, Kuan-Yu Chen, Somnath Paul, Md Vasimuddin, Sanchit Misra, David Blaauw, Satish Narayanasamy, Reetuparna Das. "GenDP: A Framework of Dynamic Programming Acceleration for Genome Sequencing Analysis." In Proceedings of the 50th Annual International Symposium on Computer Architecture (ISCA'23). {\color{red} \textbf{Communication of ACM Research Highlights (24/10,000+)}}
+
+\textbf{[3]} Arun Subramaniyan, \textbf{Yufeng Gu}, Timothy Dunn, Somnath Paul, Md Vasimuddin, Sanchit Misra, David Blaauw, Satish Narayanasamy, and Reetuparna Das. "GenomicsBench: A Benchmark Suite for Genomics." In IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS'21). 
+% {\color{red} \href{https://genomicsbench.eecs.umich.edu/page/tutorial/}{\textbf{MICRO'21 Tutorial on Precision Health}} }
+
+\textbf{[2]} Xiaoxiao Li, \textbf{Yufeng Gu}, Nicha Dvornek, Lawrence H. Staib, Pamela Ventola, and James S. Duncan. "Multi-site fMRI analysis using privacy-preserving federated learning and domain adaptation: ABIDE results." Medical Image Analysis 65: 101765. \textit{IF = 11.1}
+
+\textbf{[1]} Xiaoxiao Li, Yuan Zhou, Nicha C. Dvornek, \textbf{Yufeng Gu}, Pamela Ventola, and James S. Duncan. "Efficient Shapley Explanation for Features Importance Estimation Under Uncertainty." In International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI'20).
+
+% \vspace{-3mm} 
+
+\section{Patents}
+\vspace{-2mm}
+
+\textbf{[2]} Reetuparna Das, \textbf{Yufeng Gu}, Alireza Khadem, Sumanth Unmesh. "Systolic Processing-In-Memory Architecture For Large Language Inference." PCT Application No. PCT/US2026/047307. Filed September 25, 2026.
+
+\textbf{[1]} Reetuparna Das, \textbf{Yufeng Gu}, Alireza Khadem, Sumanth Unmesh. "Data Reuse-Aware Scalable Processing-In-Memory Architecture For Efficient Large Language Model Inference." U.S. Patent Application No. 19/243881. Filed August 28, 2025.
+
+\section{Talks}
+\vspace{-2mm}
+
+\textbf{Architecture and System Co-Design for Scalable LLM Inference} \\
+\href{https://www.cse.cuhk.edu.hk/upcoming-events/architecture-and-system-co-design-for-scalable-large-language-model-inference/}{Chinese University of Hong Kong (CUHK)} \hfill {\itshape Dec. 2025} \\
+\href{https://www.appt-conference.com/parallel-events/phd-forum}{PhD Forum at APPT 2025} \hfill {\itshape July 2025} \\
+Los Alamos National Laboratory \hfill {\itshape May 2025} \\
+\vspace{-6mm}
+
+
+
+\textbf{CXL-enabled PIM system for LLM inference} \\
+\href{https://safari.ethz.ch/safari-live-seminar-yufeng-gu-june-5-2025/}{SAFARI Live Seminar} (Host: Prof. Onur Mutlu) \hfill {\itshape June 2025} \\
+\href{https://events.safari.ethz.ch/asplos25-MCCSys/doku.php}{MCCSys workshop} co-located with \href{https://www.asplos-conference.org/asplos2025/}{ASPLOS 2025} \hfill {\itshape Mar. 2025} \\
+\vspace{-6mm}
+
+\begin{samepage}
+\textbf{Genomics Benchmark Suite and Accelerator Design} \\
+\href{https://www.youtube.com/watch?v=8ZF-ocbuwsI}{Computer Architecture Seminar} at UCF (Host: Prof. Di Wu) \hfill {\itshape Mar. 2024} \\
+Cornel University (Host: Prof. Christopher Batten) \hfill {\itshape Feb. 2024} \\
+\href{http://www.ict.ac.cn/xwgg/tzgg/202311/t20231129_6938791.html}{Peisu Xia Forum} at ICT, CAS \hfill {\itshape Dec. 2023} \\
+\par
+\end{samepage}
+\vspace{-6mm}
+
+
+\section{Teaching}
+
+Guest Lecture at UMich EECS 570 Parallel Computer Architecture (Fall 2025 and Winter 2026)
+\vspace{-2mm}
+
+Programming at Discovery Engineering program at University of Michigan \hfill {\itshape July. 2022}
+\vspace{-2mm}
+
+Mathematics at Tuanlin Primary School, Guizhou, China \hfill {\itshape Aug. 2017}
+\vspace{-2mm}
+
+\section{Services}
+
+\textbf{Program Committee}
+\begin{itemize}
+    \item IEEE International Symposium on High-Performance Computer Architecture (HPCA) 2027
+\end{itemize}
+\vspace{-2mm}
+
+\textbf{Journal Reviewer}
+\begin{itemize}
+    \item IEEE Transaction on Computer (TC)
+    \item Journal of Systems Architecture (JSA)
+    \item IEEE Transaction on Big Data (TBD)
+    \item IEEE Computer Architecture Letter (CAL)
+\end{itemize}
+\vspace{-2mm}
+
+\textbf{Artifact Evaluation Committee}
+\begin{itemize}
+    \item International Symposium on Computer Architecture (ISCA) 2023, 2024, 2025
+    \item IEEE International Symposium on Workload Characterization (IISWC) 2021
+\end{itemize}
+\vspace{-2mm}
+
+\section{Mentorship}
+
+\textbf{Linus Wang} B.S. UM $\rightarrow$ Ph.D. at UMich \hfill {\itshape Jan. 2025 - Now}
+\vspace{-2mm}
+
+\textbf{Wenjie Geng} M.S. UM $\rightarrow$ Research Assistant at UMich \hfill {\itshape Sep. 2024 - Aug. 2026}
+\vspace{-2mm}
+
+\textbf{Zesen Zhao} M.S. UM $\rightarrow$ Ph.D. at UMich \hfill {\itshape Jan. 2025 - Aug. 2025}
+\vspace{-2mm}
+
+\textbf{Mayne Mei} B.Eng. UM $\rightarrow$ Engineer at Etched \hfill {\itshape Jan. 2024 - Apr. 2024}
+\vspace{-2mm}
+
+\textbf{Yuzhe Ruan} B.S. UM $\rightarrow$ M.S. at Yale \hfill {\itshape Sep. 2023 - Apr. 2024}
+\vspace{-2mm}
+
+\textbf{Donglin Yu} B.Eng. $\rightarrow$ M.Eng. at UIUC \hfill {\itshape Jan. 2023 - Apr. 2024}
+\vspace{-2mm}
+
+\textbf{Dawit Melka} B.Eng. Addis Ababa University $\rightarrow$ Engineer at iCog Labs \hfill {\itshape May 2022 - Aug. 2022}
+\vspace{-2mm}
+
+\textbf{James Gu} B.Eng. UM $\rightarrow$ Engineer at Amazon \hfill {\itshape May 2022 - Aug. 2022}
+\vspace{-2mm}
+
+      
+\end{document}
+
+

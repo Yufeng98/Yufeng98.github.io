@@ -222,10 +222,17 @@ span.highlight {
 }
 .news-scroll ul {
   margin: 0;
-  padding: 6px 6px 6px 24px;
+  padding: 6px 10px;
+  list-style: none;
 }
 .news-scroll li {
   margin-bottom: 3px;
+}
+.news-date {
+  color: #666;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 [id^="pub-"] {
